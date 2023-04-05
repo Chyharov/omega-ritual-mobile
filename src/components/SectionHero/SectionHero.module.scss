@@ -30,6 +30,7 @@
   @include mq(mob-only) {
     font-size: 20px;
     font-weight: 600;
+    margin-bottom: 10px;
   }
 
   @include mq(tab) {
@@ -38,4 +39,23 @@
   @include mq(desk) {
     max-width: 1250px;
   }
+}
+
+.hero__address {
+  @include mq(mob) {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.38;
+  width: 220px;
+  margin: 0 auto;
+  }
+
+  // @include mq(tab) {
+  //   text-align: center;
+  // }
+  // @include mq(desk) {
+  //   text-align: center;
+  //   width: 1250px;
+  // }
 }

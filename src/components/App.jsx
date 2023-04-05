@@ -2,7 +2,7 @@ import Header from './Header/Header';
 import Hero from './SectionHero/SectionHero';
 import SectionAbout from './SectionAbout/SectionAbout';
 import SectionTeam from './SectionTeam/SectionTeam';
-import Footer from './Footer/Footer';
+// import Footer from './Footer/Footer';
 
 export const App = () => {
   return (
@@ -11,7 +11,7 @@ export const App = () => {
       <Hero />
       <SectionAbout />
       <SectionTeam />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

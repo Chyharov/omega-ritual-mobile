@@ -1,56 +1,35 @@
-// import { useEffect, useState } from 'react';
-// import { useMediaQuery } from 'react-responsive';
-// import Navigation from '../Navigation/Navigation';
+import { useState } from 'react';
 import s from '../Header/Header.module.scss';
 import Logo from '../Logo/Logo';
+import NavMenu from 'components/NavMenu/NavMenu';
+
 
 const Header = () => {
-  // const [isActive, setIsActive] = useState(false);
-
-  // const isMobile = useMediaQuery({ query: '(max-width: 767.99px)' });
-  // const isTablet = useMediaQuery({ query: '(min-width: 768px)' });
-
-  // const handleScroll = () => {
-  //   if (isMobile && window.scrollY > 120 && !isActive) {
-  //     setIsActive(true);
-  //     return;
-  //   }
-  //   if (isTablet && window.scrollY > 80 && !isActive) {
-  //     setIsActive(true);
-  //     return;
-  //   }
-  //   setIsActive(false);
-  // };
-
-  // useEffect(() => {
-  //   document.addEventListener('scroll', handleScroll);
-  //   return () => document.removeEventListener('scroll', handleScroll);
-
-  //   // eslint-disable-next-line
-  // }, []);
+  const [menuActive, setMenuActive] = useState(false);
+  const items = [{value: "Головна", href: "/"}, {value: "Послуги", href: "/servise"}, {value: "Магазин", href: "/shop"}]
 
   return (
     <header>
-      {/* <header className={isActive === true ? s['header--active'] : s.header}> */}
-      <div className={'container ' + s.header__container}>
+      <div className={s.header__container}>
         <Logo />
-        {/* <Navigation /> */}
-      </div>
-    </header>
+        
 
-    // <div className={s.header}>
-    //   <img
-    //     className={s.header__img}
-    //     loading="lazy"
-    //     src={logo}
-    //     alt="header__img"
-    //   />
-    //   <div className={s.header__title}>
-    //     <h1>ОМЕГА-РИТУАЛ</h1>
-    //     <p>похоронний дім</p>
-    //   </div>
-    // </div>
+        <nav>
+          <div className={s.burger__btn} onClick={() => setMenuActive(!menuActive)} >
+          <svg viewBox=" 1 1 28 28" height={35} width={40}>
+            <path d="M4 24h24v-2.666h-24v2.666zM4 17.334h24v-2.667h-24v2.667zM4 8v2.666h24v-2.666h-24z"></path>
+          </svg>
+          </div>
+          
+        </nav>
+      </div>
+      <NavMenu active={menuActive} setActive={setMenuActive} items={items}/>
+    </header>
   );
 };
 
 export default Header;
+
+<svg viewBox=" 1 1 28 28" height={35} width={40}>
+            <path d="M4 24h24v-2.666h-24v2.666zM4 17.334h24v-2.667h-24v2.667zM4 8v2.666h24v-2.666h-24z"></path>
+          </svg>
