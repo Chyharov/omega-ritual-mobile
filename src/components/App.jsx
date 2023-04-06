@@ -8,9 +8,11 @@ export const App = () => {
   return (
     <>
       <Header />
+      <main>
       <Hero />
       <SectionAbout />
       <SectionTeam />
+      </main>
       {/* <Footer /> */}
     </>
   );

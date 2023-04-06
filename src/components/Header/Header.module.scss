@@ -8,6 +8,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    outline: 1px solid var(--primaryTextColor);
+    margin-bottom: 1px;
   }
 
   @include mq(tab) {
