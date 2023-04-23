@@ -4,15 +4,13 @@ import NavBar from 'components/NavBar/NavBar';
 
 
 const Header = () => {
-
   return (
-    <header>
-
-      <div className={s.header__container}>
+    <header className={s.header}>
+      <div className={'container ' + s.header__container}>
         <Logo />
       </div>
 
-        <NavBar />
+      <NavBar />
         
     </header>
   );
