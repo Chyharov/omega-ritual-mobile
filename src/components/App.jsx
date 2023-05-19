@@ -1,22 +1,27 @@
-import Header from './Header/Header';
-import Hero from './SectionHero/SectionHero';
-import SectionAbout from './SectionAbout/SectionAbout';
-import SectionTeam from './SectionTeam/SectionTeam';
-import SectionRitualGoods from './SectionRitualGoods/SectionRitualGoods';
-import SectionRitualServices from './SectionRitualServices/SectionRitualServices';
+import { Routes, Route } from 'react-router-dom';
+import MainPage from 'pages/MainPage/MainPage';
+import WreathsPage from 'pages/MainPage/WreathsPage/WreathsPage';
+import CoffinsPage from 'pages/MainPage/CoffinsPage/CoffinsPage';
+import CrossesPage from 'pages/MainPage/CrossesPage/CrossesPage';
+import MonumentsPage from 'pages/MonumentsPage/MonumentsPage';
+import CoveredPage from 'pages/CoveredPage/CoveredPage';
+import OtherAttributesPage from 'pages/OtherAttributesPage/OtherAttributesPage';
 
 
 export const App = () => {
   return (
     <>
-      <Header />
-      <main>
-      <Hero />
-      <SectionAbout />
-      <SectionTeam />
-      <SectionRitualGoods />
-      <SectionRitualServices />
-      </main>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/wreaths" element={<WreathsPage />} />
+        <Route path="/coffins" element={<CoffinsPage />} />
+        <Route path="/crosses" element={<CrossesPage />} />
+        <Route path="/monuments" element={<MonumentsPage />} />
+        <Route path="/covered" element={<CoveredPage />} />
+        <Route path="/otherattributes" element={<OtherAttributesPage/>} />
+      </Routes>
     </>
+    
+    
   );
 };

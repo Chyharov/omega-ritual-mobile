@@ -38,14 +38,14 @@
 }
 
 .navBar {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    display: flex;
+    justify-content: center;
 
     @include mq(tab) {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     }
   }
   

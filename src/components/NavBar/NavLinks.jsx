@@ -1,6 +1,7 @@
 import { Link } from 'react-scroll';
-import s from './NavBar.module.scss'
 import { motion } from 'framer-motion'
+import ServicesPage from 'pages/MainPage/WreathsPage/WreathsPage';
+import s from './NavBar.module.scss'
 
 const NavLinks = (props) => {
 
@@ -79,6 +80,23 @@ const NavLinks = (props) => {
                     Ритуальні послуги
                 </Link>
             </motion.li>
+            <motion.li 
+            initial={animateFrom}
+            animate={animateTo}
+            transition={{delay: 0.40}}
+            className={s.menu__list_item}>
+                <Link
+                onClick={() => props.isMobile && props.closeMobileMenu()}
+                    className={s.menu__list_link}
+                    to="servicesList"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}>
+                    Додаткові послуги
+                </Link>
+            </motion.li>
+            
 
         </ul>
      );
