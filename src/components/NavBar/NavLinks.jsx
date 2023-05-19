@@ -1,6 +1,5 @@
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion'
-import ServicesPage from 'pages/MainPage/WreathsPage/WreathsPage';
 import s from './NavBar.module.scss'
 
 const NavLinks = (props) => {

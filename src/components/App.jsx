@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 import MainPage from 'pages/MainPage/MainPage';
-import WreathsPage from 'pages/MainPage/WreathsPage/WreathsPage';
-import CoffinsPage from 'pages/MainPage/CoffinsPage/CoffinsPage';
-import CrossesPage from 'pages/MainPage/CrossesPage/CrossesPage';
+import WreathsPage from 'pages/WreathsPage/WreathsPage';
+import CoffinsPage from 'pages/CoffinsPage/CoffinsPage';
+import CrossesPage from 'pages/CrossesPage/CrossesPage';
 import MonumentsPage from 'pages/MonumentsPage/MonumentsPage';
 import CoveredPage from 'pages/CoveredPage/CoveredPage';
 import OtherAttributesPage from 'pages/OtherAttributesPage/OtherAttributesPage';
