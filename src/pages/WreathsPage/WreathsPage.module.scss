@@ -1,0 +1,40 @@
+.wreathsPageTitle {
+    text-align: center;
+    font-family: Open Sans SemiBold;
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--primaryTextColor);
+}
+
+.freshFlowers {
+    padding-bottom: 20px;
+}
+
+.wreathsPageDescription {
+    font-family: Open Sans Regular;
+    text-align: justify;
+    color: var(--primaryTextColor);
+    padding-bottom: 20px;
+}
+
+.wreathsContainer {
+padding: 20px;    
+    
+}
+
+.wreathsdDescriptionContainer {
+    padding: 10px;
+outline: 1px solid var(--primaryTextColor);
+}
+
+.wreathsPageDescription__description {
+color: var(--primaryTextColor);
+}
+
+.wreathsPageDescription__list {
+list-style: disc;
+padding-left: 20px;
+margin-bottom: 20px;
+}
