@@ -5,8 +5,8 @@ import s from '../SectionServicesList/SectionServicesList.module.scss';
 const SectionServicesList = () => {
   return (
     <section className={s.SectionServicesList} id='servicesList'>
-      <div className="container">
-            <div className={s.ritualServices__container}>
+          <div className={'container ' + s.ritualServices__container}>
+
                   
             <ul className={s.ritualServices__list}>
                       
@@ -65,7 +65,6 @@ const SectionServicesList = () => {
                 </li>      
             </ul>     
         </div>
-      </div>
     </section>
   );
 };

@@ -1,7 +1,7 @@
 .wreathsPageTitle {
     text-align: center;
     font-family: Open Sans SemiBold;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -9,32 +9,71 @@
 }
 
 .freshFlowers {
-    padding-bottom: 20px;
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+}
+
+.wreathsLinksTitle {
+    font-family: Open Sans SemiBold;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: var(--primaryTextColor);
 }
 
 .wreathsPageDescription {
     font-family: Open Sans Regular;
-    text-align: justify;
+    font-size: 15px;
+    text-align: inherit;
     color: var(--primaryTextColor);
     padding-bottom: 20px;
 }
 
 .wreathsContainer {
-padding: 20px;    
-    
+    padding: 20px;    
+    background-color: var(--backgroundColor);
 }
 
 .wreathsdDescriptionContainer {
     padding: 10px;
-outline: 1px solid var(--primaryTextColor);
+    outline: 1px solid var(--primaryTextColor);
+    background-color: var(--backgroundColor);
 }
 
-.wreathsPageDescription__description {
-color: var(--primaryTextColor);
+.wreathsPageDescription__listItem {
+    font-family: Open Sans Regular;
+    color: var(--primaryTextColor);
+    list-style: disc;
 }
 
 .wreathsPageDescription__list {
-list-style: disc;
-padding-left: 20px;
-margin-bottom: 20px;
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
 }
+
+.sectionWreaths {
+    background-color: var(--backgroundColor);
+    padding-top: 70px;
+}
+
+.wreathsPageDescriptionOmega {
+    font-weight: 800;
+}
+
+.wreathsLinksContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wreathsLinks {
+    width: 120px;
+    outline: 1px solid var(--primaryTextColor);
+
+}
+
+
