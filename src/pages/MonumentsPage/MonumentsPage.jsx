@@ -1,10 +1,14 @@
 import MainHeader from '../../components/MainHeader/MainHeader'
+import Monuments from 'components/Monuments/Monuments';
 
 const MonumentsPage = () => {
   return (
     <>
       <MainHeader />
-      <h1>Its Monuments Page</h1>
+      <main>
+        <Monuments />
+      </main>
+      
     </>
   );
 };
