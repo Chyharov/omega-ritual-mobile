@@ -1,18 +1,18 @@
-.sectionCrosses {
+.sectionMonuments {
     background-color: var(--backgroundColor);
     padding-top: 70px;
 }
 
-.crossesContainer {
+.monumentsContainer {
     padding: 20px;
 }
 
-.crossesDescriptionContainer {
+.monumentsDescriptionContainer {
     padding: 10px;
     outline: 1px solid var(--primaryTextColor);
 }
 
-.crosses__title {
+.monuments__title {
     text-align: center;
     font-family: Open Sans SemiBold;
     font-size: 20px;
@@ -23,7 +23,7 @@
 
 }
 
-.crosses__description {
+.monuments__description {
     font-family: Open Sans Regular;
     font-size: 15px;
     text-align: inherit;
@@ -31,36 +31,36 @@
     padding-bottom: 20px;
 }
 
-.crosses__list {
+.monuments__list {
     padding-left: 20px;
     margin-bottom: 20px;
 }
 
-.crosses__listItem {
+.monuments__listItem {
     font-family: Open Sans Regular;
     color: var(--primaryTextColor);
     list-style: disc;
     margin-bottom: 10px;
 }
 
-.crosses__listSpan {
+.monuments__listSpan {
     font-weight: 600;
 }
 
-.crosses__pictureList {
+.monuments__pictureList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
 
 }
 
-.crossesPictureList_img {
+.monumentsPictureList_img {
     width: 125px;
     height: 190px;
     padding-bottom: 10px;
 }
 
-.crossesPictureList__description {
+.monumentsPictureList__description {
     font-family: Open Sans Regular;
     font-size: 15px;
     text-align: inherit;
