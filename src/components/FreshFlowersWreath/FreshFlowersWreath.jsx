@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './FreshFlowersWreath.module.scss'
 
-const freshFlowersWreath = () => {
+const FreshFlowersWreath = () => {
 
   const FreshFlowersWreathPictureList = [
   { id: 1, src: require('../../images/freshFlowersWreath/IMG-0033.png'), alt: 'Зображення 1' },
@@ -74,10 +74,10 @@ const freshFlowersWreath = () => {
           
               <p className={s.freshFlowersWreath__description}>Флористи похоронного будинку «Омега» підберуть для вас ідеальну композицію з живих квітів у вигляді жалобного вінка, кошика, монограми або букета на похорон. Ми вкладемо у кожну квітку свій символ, щоб ви змогли яскравіше висловити свої почуття до покійного. Ви можете купити вінок або жалобний кошик із живих квітів для покладання на похороні близької людини або замовити комплексне флористичне оформлення церемонії прощання.</p>
           
-              <ul className={s.FreshFlowersWreathPictureList}>
+              <ul className={s.freshFlowersWreathPictureList}>
                 {FreshFlowersWreathPictureList.map((image) => (
-                  <li className={s.FreshFlowersWreathPictureList__item} key={image.id}>
-                    <img className={s.FreshFlowersWreathPictureList_img} src={image.src} alt={image.alt} />
+                  <li className={s.freshFlowersWreathPictureList__item} key={image.id}>
+                    <img className={s.freshFlowersWreathPictureList_img} src={image.src} alt={image.alt} />
                   </li>
                 ))}
               </ul>
@@ -87,4 +87,4 @@ const freshFlowersWreath = () => {
     );
   };
 
-export default freshFlowersWreath;
+export default FreshFlowersWreath;
