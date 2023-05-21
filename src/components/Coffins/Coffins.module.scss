@@ -1,18 +1,18 @@
-.sectionArtificialWreaths {
+.sectionCoffinsWreaths {
     background-color: var(--backgroundColor);
     padding-top: 70px;
 }
 
-.artificialWreathsContainer {
+.coffinsContainer {
     padding: 20px;
 }
 
-.artificialWreathsDescriptionContainer {
+.coffinsDescriptionContainer {
     padding: 10px;
     outline: 1px solid var(--primaryTextColor);
 }
 
-.artificialWreath__title {
+.coffins__title {
     text-align: center;
     font-family: Open Sans SemiBold;
     font-size: 20px;
@@ -23,7 +23,7 @@
 
 }
 
-.artificialWreath__description {
+.coffins__description {
     font-family: Open Sans Regular;
     font-size: 15px;
     text-align: inherit;
@@ -31,36 +31,35 @@
     padding-bottom: 20px;
 }
 
-.artificialWreath__list {
+.coffins__list {
     padding-left: 20px;
     margin-bottom: 20px;
 }
 
-.artificialWreath__listItem {
+.coffins__listItem {
     font-family: Open Sans Regular;
     color: var(--primaryTextColor);
     list-style: disc;
     margin-bottom: 10px;
 }
 
-.artificialWreath__listSpan {
+.coffins__listSpan {
     font-weight: 800;
 }
 
-.artificialWreath__pictureList {
+.coffins__pictureList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
 
 }
 
-.artificialWreathPictureList_img {
+.coffinsPictureList__img {
     width: 125px;
-    height: 190px;
-    padding-bottom: 10px;
+    height: 125px;
 }
 
-.artificialWreathPictureList__description {
+.coffinsPictureList__description {
     font-family: Open Sans Regular;
     font-size: 15px;
     text-align: inherit;

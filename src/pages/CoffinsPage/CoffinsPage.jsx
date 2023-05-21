@@ -1,10 +1,11 @@
 import MainHeader from '../../components/MainHeader/MainHeader'
+import Coffins from '../../components/Coffins/Coffins'
 
 const CoffinsPage = () => {
   return (
     <>
       <MainHeader />
-      <h1>Its Coffins Page</h1>
+      <Coffins />
     </>
   );
 };

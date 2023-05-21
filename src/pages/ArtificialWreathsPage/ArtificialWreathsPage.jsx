@@ -5,7 +5,10 @@ const ArtificialWreathsPage = () => {
   return (
     <>
       <WreathsHeader />
-      <ArtificialWreath/>
+      <main>
+        <ArtificialWreath/>
+      </main>
+      
     </>
   );
 };

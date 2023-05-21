@@ -32,7 +32,7 @@
     @include mq(mob-only) {
         font-size: 20px;
         font-weight: 600;
-        margin: 30px 30px 20px 30px;
+        margin: 30px;
     }
 
     @include mq(tab) {}
@@ -43,7 +43,6 @@
 }
 
 .ritualServices__border {
-    height: 112px;
     width: 278px;
     border: 0.5px solid var(--primaryTextColor);
     border-radius: 8px;

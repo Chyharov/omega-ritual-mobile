@@ -3,30 +3,30 @@ import s from './ArtificialWreath.module.scss'
 const ArtificialWreaths = () => {
     
   const ArtificialWreathsPictureList = [
-      { id: 1, src: require('../../images/artificialWreaths/DSC_3492.jpg'), alt: 'Зображення 1' },
-      { id: 2, src: require('../../images/artificialWreaths/DSC_3499.jpg'), alt: 'Зображення 2' },
-      { id: 3, src: require('../../images/artificialWreaths/DSC_3500.jpg'), alt: 'Зображення 3' },
-      { id: 4, src: require('../../images/artificialWreaths/DSC_3502.jpg'), alt: 'Зображення 4' },
-      { id: 5, src: require('../../images/artificialWreaths/DSC_3504.jpg'), alt: 'Зображення 5' },
-      { id: 6, src: require('../../images/artificialWreaths/DSC_3506.jpg'), alt: 'Зображення 6' },
-      { id: 7, src: require('../../images/artificialWreaths/DSC_3509.jpg'), alt: 'Зображення 7' },
-      { id: 8, src: require('../../images/artificialWreaths/DSC_3510.jpg'), alt: 'Зображення 8' },
-      { id: 9, src: require('../../images/artificialWreaths/DSC_3511.jpg'), alt: 'Зображення 9' },
-      { id: 10, src: require('../../images/artificialWreaths/DSC_3515.jpg'), alt: 'Зображення 10' },
-      { id: 11, src: require('../../images/artificialWreaths/DSC_3517.jpg'), alt: 'Зображення 11' },
-      { id: 12, src: require('../../images/artificialWreaths/DSC_3518.jpg'), alt: 'Зображення 12' },
-      { id: 13, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-06.jpg.webp'), alt: 'Зображення 13' },
-      { id: 14, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-19.jpg.webp'), alt: 'Зображення 14' },
-      { id: 15, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-22.jpg.webp'), alt: 'Зображення 15' },
-      { id: 16, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-25.jpg.webp'), alt: 'Зображення 16' },
-      { id: 17, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-28.jpg.webp'), alt: 'Зображення 17' },
-      { id: 18, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-33.jpg.webp'), alt: 'Зображення 18' },
-      { id: 19, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-37.jpg.webp'), alt: 'Зображення 19' },
-      { id: 20, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-40.jpg.webp'), alt: 'Зображення 20' },
-      { id: 21, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-43.jpg.webp'), alt: 'Зображення 21' },
-      { id: 22, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-46.jpg.webp'), alt: 'Зображення 22' },
-      { id: 23, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-53.jpg.webp'), alt: 'Зображення 23' },
-      { id: 24, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-56.jpg.webp'), alt: 'Зображення 24' },
+      { id: 1, src: require('../../images/artificialWreaths/DSC_3492.jpg'), alt: 'Зображення 1', title: '210см' },
+      { id: 2, src: require('../../images/artificialWreaths/DSC_3499.jpg'), alt: 'Зображення 2', title: '190см' },
+      { id: 3, src: require('../../images/artificialWreaths/DSC_3500.jpg'), alt: 'Зображення 3', title: '210см' },
+      { id: 4, src: require('../../images/artificialWreaths/DSC_3502.jpg'), alt: 'Зображення 4', title: '190см' },
+      { id: 5, src: require('../../images/artificialWreaths/DSC_3504.jpg'), alt: 'Зображення 5', title: '190см' },
+      { id: 6, src: require('../../images/artificialWreaths/DSC_3506.jpg'), alt: 'Зображення 6', title: '180см' },
+      { id: 7, src: require('../../images/artificialWreaths/DSC_3509.jpg'), alt: 'Зображення 7', title: '180см' },
+      { id: 8, src: require('../../images/artificialWreaths/DSC_3510.jpg'), alt: 'Зображення 8', title: '170см' },
+      { id: 9, src: require('../../images/artificialWreaths/DSC_3511.jpg'), alt: 'Зображення 9', title: '160см' },
+      { id: 10, src: require('../../images/artificialWreaths/DSC_3515.jpg'), alt: 'Зображення 10', title: '150см' },
+      { id: 11, src: require('../../images/artificialWreaths/DSC_3517.jpg'), alt: 'Зображення 11', title: 'ППК' },
+      { id: 12, src: require('../../images/artificialWreaths/DSC_3518.jpg'), alt: 'Зображення 12', title: '130см' },
+      { id: 13, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-06.jpg.webp'), alt: 'Зображення 13', title: 'Пухнастий'},
+      { id: 14, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-19.jpg.webp'), alt: 'Зображення 14', title: '210см' },
+      { id: 15, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-22.jpg.webp'), alt: 'Зображення 15', title: '160см' },
+      { id: 16, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-25.jpg.webp'), alt: 'Зображення 16', title: 'ППК' },
+      { id: 17, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-28.jpg.webp'), alt: 'Зображення 17', title: 'Пухнастий' },
+      { id: 18, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-33.jpg.webp'), alt: 'Зображення 18', title: 'Пухнастий' },
+      { id: 19, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-37.jpg.webp'), alt: 'Зображення 19', title: '150см' },
+      { id: 20, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-40.jpg.webp'), alt: 'Зображення 20', title: '150см' },
+      { id: 21, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-43.jpg.webp'), alt: 'Зображення 21', title: '130см' },
+      { id: 22, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-46.jpg.webp'), alt: 'Зображення 22', title: '160см' },
+      { id: 23, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-53.jpg.webp'), alt: 'Зображення 23', title: '130см' },
+      { id: 24, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-56.jpg.webp'), alt: 'Зображення 24', title: '130см' },
       
 ];
 
@@ -72,6 +72,7 @@ const ArtificialWreaths = () => {
                     {ArtificialWreathsPictureList.map((image) => (
                     <li className={s.artificialWreath__pictureListItem} key={image.id}>
                         <img className={s.artificialWreathPictureList_img} src={image.src} alt={image.alt} />
+                        <p className={s.artificialWreathPictureList__description}>{image.title}</p>
                     </li>
                     ))}
                 </ul>

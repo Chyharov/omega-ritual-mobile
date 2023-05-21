@@ -7,7 +7,10 @@ const freshFlowersWreathPage = () => {
     return (
       <>
         <WreathsHeader />
-        <FreshFlowersWreath />
+        <main>
+          <FreshFlowersWreath />
+        </main>
+        
       </>
     );
   };
