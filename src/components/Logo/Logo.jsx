@@ -1,4 +1,4 @@
-import logo from '../../images/omega-ritual-logo.svg';
+import logo from '../../images/logo/omega-ritual-logo.svg';
 import s from './Logo.module.scss';
 
 const Logo = () => {

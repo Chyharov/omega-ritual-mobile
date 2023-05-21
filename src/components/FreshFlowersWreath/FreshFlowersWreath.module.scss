@@ -1,0 +1,55 @@
+.sectionFreshFlowersWreath {
+    background-color: var(--backgroundColor);
+    padding-top: 70px;
+}
+
+.wreathsContainer {
+    padding: 20px;
+}
+
+.freshFlowersWreathDescriptionContainer {
+    padding: 10px;
+    outline: 1px solid var(--primaryTextColor);
+}
+
+.freshFlowersWreath__title {
+    text-align: center;
+    font-family: Open Sans SemiBold;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--primaryTextColor);
+
+}
+
+.freshFlowersWreath__description {
+    font-family: Open Sans Regular;
+    font-size: 15px;
+    text-align: inherit;
+    color: var(--primaryTextColor);
+    padding-bottom: 20px;
+}
+
+.freshFlowersWreath__list {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.freshFlowersWreath__listItem {
+    font-family: Open Sans Regular;
+    color: var(--primaryTextColor);
+    list-style: disc;
+    margin-bottom: 10px;
+}
+
+.FreshFlowersWreathPictureList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+
+}
+
+.FreshFlowersWreathPictureList_img {
+    width: 125px;
+}

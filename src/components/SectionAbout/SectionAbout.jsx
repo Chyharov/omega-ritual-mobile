@@ -1,4 +1,4 @@
-import logo from '../../images/logoAbout.svg';
+import logo from '../../images/logo/logoAbout.svg';
 import s from '../SectionAbout/SectionAbout.module.scss';
 
 const SectionAbout = () => {

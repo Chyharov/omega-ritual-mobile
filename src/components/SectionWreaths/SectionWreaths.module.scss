@@ -34,7 +34,7 @@
 }
 
 .wreathsContainer {
-    padding: 20px;    
+    padding: 20px;
     background-color: var(--backgroundColor);
 }
 
@@ -48,6 +48,7 @@
     font-family: Open Sans Regular;
     color: var(--primaryTextColor);
     list-style: disc;
+    margin-bottom: 10px;
 }
 
 .wreathsPageDescription__list {
@@ -75,5 +76,3 @@
     outline: 1px solid var(--primaryTextColor);
 
 }
-
-

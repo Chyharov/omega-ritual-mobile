@@ -1,15 +1,15 @@
+import React from 'react';
 import WreathsHeader from '../../components/WreathsHeader/WreathsHeader'
-import s from './FreshFlowersWreathPage.module.scss'
+import FreshFlowersWreath from 'components/FreshFlowersWreath/FreshFlowersWreath';
 
-const freshFlowersWreath = () => {
-  return (
-    <>
-      <WreathsHeader />
-      <h1 className={s.freshFlowersWreath__title}>Its fresh flowers wreath Page</h1>
-    </>
-  );
-};
+const freshFlowersWreathPage = () => {
 
+    return (
+      <>
+        <WreathsHeader />
+        <FreshFlowersWreath />
+      </>
+    );
+  };
 
-
-export default freshFlowersWreath;
+export default freshFlowersWreathPage;
