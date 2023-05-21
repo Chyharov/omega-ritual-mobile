@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/omega-ritual-mobile/static/css/main.4e063ab7.css",
-    "main.js": "/omega-ritual-mobile/static/js/main.685b8200.js",
+    "main.css": "/omega-ritual-mobile/static/css/main.be660a66.css",
+    "main.js": "/omega-ritual-mobile/static/js/main.1de509ba.js",
     "static/media/IMG-0033.png": "/omega-ritual-mobile/static/media/IMG-0033.b2159e1379a0bb49a101.png",
     "static/media/IMG-0034.png": "/omega-ritual-mobile/static/media/IMG-0034.b926ecd334ac9c0734c6.png",
     "static/media/photo_5_2023-04-20_20-12-55.jpg": "/omega-ritual-mobile/static/media/photo_5_2023-04-20_20-12-55.9549b4295454dbc4dbeb.jpg",
@@ -124,11 +124,11 @@
     "static/media/DSC_3336.jpg": "/omega-ritual-mobile/static/media/DSC_3336.383c5e95e0d4e8895e58.jpg",
     "static/media/photo_2019-07-01_14-41-19.jpg.webp": "/omega-ritual-mobile/static/media/photo_2019-07-01_14-41-19.jpg.54e382e98073b14fd58a.webp",
     "index.html": "/omega-ritual-mobile/index.html",
-    "main.4e063ab7.css.map": "/omega-ritual-mobile/static/css/main.4e063ab7.css.map",
-    "main.685b8200.js.map": "/omega-ritual-mobile/static/js/main.685b8200.js.map"
+    "main.be660a66.css.map": "/omega-ritual-mobile/static/css/main.be660a66.css.map",
+    "main.1de509ba.js.map": "/omega-ritual-mobile/static/js/main.1de509ba.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e063ab7.css",
-    "static/js/main.685b8200.js"
+    "static/css/main.be660a66.css",
+    "static/js/main.1de509ba.js"
   ]
 }
