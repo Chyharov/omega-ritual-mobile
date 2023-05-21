@@ -1,10 +1,14 @@
 import MainHeader from '../../components/MainHeader/MainHeader'
+import Crosses from '../../components/Crosses/Crosses'
 
 const CrossesPage = () => {
   return (
     <>
       <MainHeader />
-      <h1>Its Crosses Page</h1>
+      <main>
+        <Crosses />
+      </main>
+
     </>
   );
 };

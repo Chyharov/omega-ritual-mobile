@@ -5,7 +5,10 @@ const CoffinsPage = () => {
   return (
     <>
       <MainHeader />
-      <Coffins />
+      <main>
+        <Coffins />
+      </main>
+
     </>
   );
 };

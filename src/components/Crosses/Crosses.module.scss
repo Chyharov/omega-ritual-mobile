@@ -1,0 +1,69 @@
+.sectionCrosses {
+    background-color: var(--backgroundColor);
+    padding-top: 70px;
+}
+
+.crossesContainer {
+    padding: 20px;
+}
+
+.crossesDescriptionContainer {
+    padding: 10px;
+    outline: 1px solid var(--primaryTextColor);
+}
+
+.crosses__title {
+    text-align: center;
+    font-family: Open Sans SemiBold;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--primaryTextColor);
+
+}
+
+.crosses__description {
+    font-family: Open Sans Regular;
+    font-size: 15px;
+    text-align: inherit;
+    color: var(--primaryTextColor);
+    padding-bottom: 20px;
+}
+
+.crosses__list {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.crosses__listItem {
+    font-family: Open Sans Regular;
+    color: var(--primaryTextColor);
+    list-style: disc;
+    margin-bottom: 10px;
+}
+
+.crosses__listSpan {
+    font-weight: 800;
+}
+
+.crosses__pictureList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+
+}
+
+.crossesPictureList_img {
+    width: 125px;
+    height: 190px;
+    padding-bottom: 10px;
+}
+
+.crossesPictureList__description {
+    font-family: Open Sans Regular;
+    font-size: 15px;
+    text-align: inherit;
+    color: var(--primaryTextColor);
+    text-align: center;
+}
