@@ -1,12 +1,12 @@
 import MainHeader from '../../components/MainHeader/MainHeader'
-import Coffins from '../../components/Coffins/Coffins'
+import SectionCoffins from '../../components/SectionCoffins/SectionCoffins'
 
 const CoffinsPage = () => {
   return (
     <>
       <MainHeader />
       <main>
-        <Coffins />
+        <SectionCoffins />
       </main>
 
     </>

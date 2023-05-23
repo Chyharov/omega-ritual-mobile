@@ -1,7 +1,11 @@
-import s from './Crosses.module.scss'
+import React, { useState, useEffect } from 'react';
+import ModalWindow from 'components/ModalWindow/ModalWindow';
+import s from './SectionCrosses.module.scss'
 
-
-const Crosses = () => {
+const SectionCrosses = () => {
+    const [modalOpen, setModalOpen] = useState(false);
+    const [selectedImageSrc, setSelectedImageSrc] = useState('');
+    const [selectedImageAlt, setSelectedImageAlt] = useState('');
 
     const CrossesPictureList = [
       { id: 1, src: require('../../images/crosses/1.jpg'), alt: 'Зображення 1' },
@@ -16,7 +20,28 @@ const Crosses = () => {
       { id: 10, src: require('../../images/crosses/DSC_3525.jpg'), alt: 'Зображення 10' },
       { id: 11, src: require('../../images/crosses/DSC_3527.jpg'), alt: 'Зображення 11' },
       { id: 12, src: require('../../images/crosses/DSC_3531.jpg'), alt: 'Зображення 12' }
-];
+  ];
+
+  const openModal = (src, alt) => {
+    setSelectedImageSrc(src);
+    setSelectedImageAlt(alt);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
+  useEffect(() => {
+    if (modalOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [modalOpen]);
 
   return (
     <section className={s.sectionCrosses}>
@@ -41,11 +66,24 @@ const Crosses = () => {
                 <ul className={s.crosses__pictureList}>
                     {CrossesPictureList.map((image) => (
                     <li className={s.crosses__pictureListItem} key={image.id}>
-                        <img className={s.crossesPictureList_img} src={image.src} alt={image.alt} />
-                    </li>
+                      <img
+                        className={s.crossesPictureList_img}
+                        src={image.src}
+                        alt={image.alt}
+                        onClick={() => openModal(image.src, image.alt)}
+                      />
+                      </li>
                     ))}
                 </ul>
-
+                
+                {modalOpen && (
+                  <ModalWindow
+                    selectedImageSrc={selectedImageSrc}
+                    selectedImageAlt={selectedImageAlt}
+                    closeModal={closeModal}
+                  />
+                )}
+          
                 <h2 className={s.crosses__title}>Як замовити ритуальний хрест у Києві?</h2>
                 <p className={s.crosses__description}>Похоронне бюро «Омега» має власні виробничі потужності, які дозволяють виготовляти дерев’яні та металеві ритуальні хрести на могилу. Кожен виріб проходить ретельний контроль на предмет якості деревообробки та столярних робіт у дерев’яних моделях, а також якості металообробки та зварювання у металевих.</p>
                 <p className={s.crosses__description}>У виробництві дерев’яних виробів ми використовуємо як недорогі, і цінні породи дерева. Завдяки цьому ми пропонуємо широку лінійку цін – від найбюджетніших варіантів, які, проте, тривалий час виконують свою практичну та сакральну функцію, так і елітні ритуальні хрести, які можна назвати витвором мистецтва.</p>
@@ -59,4 +97,4 @@ const Crosses = () => {
 
 
 
-export default Crosses;
+export default SectionCrosses;

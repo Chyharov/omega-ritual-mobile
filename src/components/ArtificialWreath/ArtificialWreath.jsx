@@ -1,6 +1,13 @@
+import React, { useState, useEffect } from 'react';
+import ModalWindow from 'components/ModalWindow/ModalWindow';
 import s from './ArtificialWreath.module.scss'
 
 const ArtificialWreaths = () => {
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImageSrc, setSelectedImageSrc] = useState('');
+  const [selectedImageAlt, setSelectedImageAlt] = useState('');
+  const [selectedImageDescrtiption, setSelectedImageDescrtiption] = useState('');
     
   const ArtificialWreathsPictureList = [
       { id: 1, src: require('../../images/artificialWreaths/DSC_3492.jpg'), alt: 'Зображення 1', title: '210см' },
@@ -28,7 +35,29 @@ const ArtificialWreaths = () => {
       { id: 23, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-53.jpg.webp'), alt: 'Зображення 23', title: '130см' },
       { id: 24, src: require('../../images/artificialWreaths/photo_2019-07-01_14-41-56.jpg.webp'), alt: 'Зображення 24', title: '130см' },
       
-];
+  ];
+  
+  const openModal = (src, alt, title) => {
+    setSelectedImageSrc(src);
+    setSelectedImageAlt(alt);
+    setSelectedImageDescrtiption(title);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
+  useEffect(() => {
+    if (modalOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [modalOpen]);
 
     return (
 
@@ -71,11 +100,21 @@ const ArtificialWreaths = () => {
                 <ul className={s.artificialWreath__pictureList}>
                     {ArtificialWreathsPictureList.map((image) => (
                     <li className={s.artificialWreath__pictureListItem} key={image.id}>
-                        <img className={s.artificialWreathPictureList_img} src={image.src} alt={image.alt} />
+                        <img className={s.artificialWreathPictureList_img} src={image.src} alt={image.alt} onClick={() => openModal(image.src, image.alt, image.title)}/>
                         <p className={s.artificialWreathPictureList__description}>{image.title}</p>
                     </li>
                     ))}
                 </ul>
+            
+                {modalOpen && (
+                  <ModalWindow
+                    selectedImageSrc={selectedImageSrc}
+                    selectedImageAlt={selectedImageAlt}
+                    closeModal={closeModal}
+                    selectedImageDescrtiption={selectedImageDescrtiption}
+                  />
+                )}
+            
             </div>
           </div>
         </section>

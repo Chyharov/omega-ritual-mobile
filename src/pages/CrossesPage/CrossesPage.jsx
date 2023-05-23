@@ -1,5 +1,5 @@
 import MainHeader from '../../components/MainHeader/MainHeader'
-import Crosses from '../../components/Crosses/Crosses'
+import Crosses from '../../components/SectionCrosses/SectionCrosses'
 
 const CrossesPage = () => {
   return (

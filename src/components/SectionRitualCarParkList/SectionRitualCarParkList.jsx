@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import s from '../RitualCarParkList/RitualCarParkList.module.scss';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { AiOutlineClose } from 'react-icons/ai';
+import s from './SectionRitualCarParkList.module.scss';
 
 const images = require.context('../../images/whiteVolksWagen/', true, /\.(jpe?g|png)$/);
 const RitualCarParkWVWPhoto = images.keys().map((path) => images(path));
@@ -33,7 +34,7 @@ const Modal = ({ closeModal, currentSlide }) => {
     <div className={s.modal} onClick={handleClick}>
       <div className={s.modalContent}>
         <span className={s.close} onClick={closeModal}>
-          &times;
+          <AiOutlineClose className={s.closeModalIcon} />
         </span>
         <CarouselProvider
           naturalSlideWidth={280}
@@ -63,7 +64,7 @@ const Modal = ({ closeModal, currentSlide }) => {
   );
 };
 
-const RitualCarParkList = () => {
+const SectionRitualCarParkList = () => {
   const [modalImage, setModalImage] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -120,4 +121,4 @@ const RitualCarParkList = () => {
   );
 };
 
-export default RitualCarParkList;
+export default SectionRitualCarParkList;

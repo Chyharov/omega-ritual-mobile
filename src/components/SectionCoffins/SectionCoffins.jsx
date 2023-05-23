@@ -1,8 +1,14 @@
-import s from './Coffins.module.scss'
+import React, { useState, useEffect } from 'react';
+import { AiOutlineClose } from 'react-icons/ai';
+import s from './SectionCoffins.module.scss'
 
-const Coffins = () => {
+const SectionCoffins = () => {
+
+    const [modalOpen, setModalOpen] = useState(false);
+    const [selectedImageSrc, setSelectedImageSrc] = useState('');
+    const [selectedImageAlt, setSelectedImageAlt] = useState('');
     
-  const CoffinsPictureElitePriceList = [
+    const CoffinsPictureElitePriceList = [
         { id: 1, src: require('../../images/coffinsElitePrice/DSC_3257-1024x680.jpg'), alt: 'Зображення 1' },
         { id: 2, src: require('../../images/coffinsElitePrice/DSC_3258.jpg'), alt: 'Зображення 2' },
         { id: 3, src: require('../../images/coffinsElitePrice/DSC_3264.jpg'), alt: 'Зображення 3' },
@@ -67,6 +73,47 @@ const Coffins = () => {
         { id: 15, src: require('../../images/coffinsEconomPrice/dsc_3464-1.jpg'), alt: 'Зображення 15' },
         { id: 16, src: require('../../images/coffinsEconomPrice/dsc_3472-1.jpg'), alt: 'Зображення 16' }, 
 ];
+    
+    const openModal = (src, alt) => {
+    setSelectedImageSrc(src);
+    setSelectedImageAlt(alt);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
+  const handleOutsideClick = (event) => {
+    if (event.target === event.currentTarget) {
+      closeModal();
+    }
+  };
+
+  useEffect(() => {
+    if (modalOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [modalOpen]);
+  
+  const handleKeyDown = (event) => {
+    if (event.key === "Escape") {
+      closeModal();
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  });
 
     return (
 
@@ -99,7 +146,7 @@ const Coffins = () => {
                 <ul className={s.coffins__pictureList}>
                     {CoffinsPictureElitePriceList.map((image) => (
                     <li className={s.coffins__pictureListItem} key={image.id}>
-                        <img className={s.coffinsictureList__img} src={image.src} alt={image.alt} />
+                        <img className={s.coffinsictureList__img} src={image.src} alt={image.alt} onClick={() => openModal(image.src, image.alt)}/>
                     </li>
                     ))}
                 </ul>
@@ -111,7 +158,7 @@ const Coffins = () => {
                 <ul className={s.coffins__pictureList}>
                     {CoffinsPictureAveragePriceList.map((image) => (
                     <li className={s.coffins__pictureListItem} key={image.id}>
-                        <img className={s.coffinsictureList__img} src={image.src} alt={image.alt} />
+                        <img className={s.coffinsictureList__img} src={image.src} alt={image.alt} onClick={() => openModal(image.src, image.alt)}/>
                     </li>
                     ))}
                 </ul>
@@ -123,10 +170,25 @@ const Coffins = () => {
                 <ul className={s.coffins__pictureList}>
                     {CoffinsPictureEconomPriceList.map((image) => (
                     <li className={s.coffins__pictureListItem} key={image.id}>
-                        <img className={s.coffinsictureList__img} src={image.src} alt={image.alt} />
+                        <img className={s.coffinsictureList__img} src={image.src} alt={image.alt} onClick={() => openModal(image.src, image.alt)}/>
                     </li>
                     ))}
                 </ul>
+
+                {modalOpen && (
+                <div className={s.modal} onClick={handleOutsideClick}>
+                  <div className={s.modalContent}>
+                    <span className={s.closeModal} onClick={closeModal}>
+                      <AiOutlineClose className={s.closeModalIcon} />
+                    </span>
+                    <img
+                      className={s.modalImage}
+                      src={selectedImageSrc}
+                      alt={selectedImageAlt}
+                    />
+                  </div>
+                </div>
+              )}    
                 
                 <p className={s.coffins__descriptionlast}>У нашому ритуальному бюро ви можете замовити як елітну, так і недорогу бюджетну труну для самостійної організації похорону. Також у вас є можливість безкоштовно викликати додому у будь-який час доби похоронного агента, який допоможе вам організувати всю жалобну церемонію та підібрати труну відповідно до бюджету та статусу покійного.</p>
             </div>
@@ -135,4 +197,4 @@ const Coffins = () => {
     );
   };
 
-export default Coffins;
+export default SectionCoffins;

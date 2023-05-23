@@ -1,11 +1,14 @@
+import { Link } from 'react-router-dom';
 import logo from '../../images/logo/omega-ritual-logo.svg';
 import s from './Logo.module.scss';
 
 const Logo = () => {
   return (
-    <a href="main" className={s.logo}>
+    <Link className={s.logo} to="/">
       <img className={s.logo__img} loading="lazy" src={logo} alt="header__logo" />
-    </a>
+  </Link>
+    
+        
   );
 };
 

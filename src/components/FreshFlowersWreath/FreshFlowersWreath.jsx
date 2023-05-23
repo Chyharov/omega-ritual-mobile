@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import ModalWindow from 'components/ModalWindow/ModalWindow';
 import s from './FreshFlowersWreath.module.scss'
 
 const FreshFlowersWreath = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImageSrc, setSelectedImageSrc] = useState('');
+  const [selectedImageAlt, setSelectedImageAlt] = useState('');
 
   const FreshFlowersWreathPictureList = [
   { id: 1, src: require('../../images/freshFlowersWreath/IMG-0033.png'), alt: 'Зображення 1' },
@@ -33,6 +37,27 @@ const FreshFlowersWreath = () => {
   { id: 27, src: require('../../images/freshFlowersWreath/IMG-0648.jpg.webp'), alt: 'Зображення 27' },
   { id: 28, src: require('../../images/freshFlowersWreath/IMG-0651.jpg.webp'), alt: 'Зображення 28' },  
 ];
+
+  const openModal = (src, alt) => {
+    setSelectedImageSrc(src);
+    setSelectedImageAlt(alt);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
+  useEffect(() => {
+    if (modalOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [modalOpen]);
 
     return (
         <section className={s.sectionFreshFlowersWreath}>
@@ -77,10 +102,19 @@ const FreshFlowersWreath = () => {
               <ul className={s.freshFlowersWreathPictureList}>
                 {FreshFlowersWreathPictureList.map((image) => (
                   <li className={s.freshFlowersWreathPictureList__item} key={image.id}>
-                    <img className={s.freshFlowersWreathPictureList_img} src={image.src} alt={image.alt} />
+                    <img className={s.freshFlowersWreathPictureList_img} src={image.src} alt={image.alt} onClick={() => openModal(image.src, image.alt)}/>
                   </li>
                 ))}
               </ul>
+            
+              {modalOpen && (
+                  <ModalWindow
+                    selectedImageSrc={selectedImageSrc}
+                    selectedImageAlt={selectedImageAlt}
+                    closeModal={closeModal}
+                  />
+                )}
+            
             </div>
           </div>
         </section>

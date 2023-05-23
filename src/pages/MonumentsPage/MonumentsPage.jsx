@@ -1,12 +1,12 @@
 import MainHeader from '../../components/MainHeader/MainHeader'
-import Monuments from 'components/Monuments/Monuments';
+import SectionMonuments from 'components/SectionMonuments/SectionMonuments';
 
 const MonumentsPage = () => {
   return (
     <>
       <MainHeader />
       <main>
-        <Monuments />
+        <SectionMonuments />
       </main>
       
     </>

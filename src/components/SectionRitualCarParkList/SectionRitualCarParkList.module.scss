@@ -155,14 +155,20 @@
 .close {
   color: var(--primaryTextColor);
     display: flex;
-    font-size: 35px;
     font-weight: bold;
     margin-right: 10px;
     justify-content: flex-end;
 }
 
-.close:hover,
-.close:focus {
+.closeModalIcon {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.closeModalIcon:hover,
+.closeModalIcon:focus {
+  transform: scale(1.2);
   color: red;
   text-decoration: none;
   cursor: pointer;

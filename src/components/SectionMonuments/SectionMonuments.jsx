@@ -1,6 +1,6 @@
-import s from './Monuments.module.scss'
+import s from './SectionMonuments.module.scss'
 
-const Monuments = () => {
+const SectionMonuments = () => {
 
     return (
       
@@ -37,7 +37,4 @@ const Monuments = () => {
   );
 };
 
-
-
-
-export default Monuments;
+export default SectionMonuments;
