@@ -29,8 +29,8 @@
 .ritualGoods__title {
   text-align: center;
   @include mq(mob-only) {
+    font-family: Open Sans SemiBold;
     font-size: 20px;
-    font-weight: 600;
     margin-bottom: 30px;
   }
 
@@ -43,28 +43,10 @@
 }
 
 .ritualGoodsDiscription {
-    font-size: 13px;
-    font-weight: 500;
-    text-align: justify;
+  font-family: Open Sans Regular;
+  font-size: 13px;
 }
 
 .ritualGoodsDiscription:first-child {
     margin-bottom: 20px;
-}
-
-.ritualGoodsBtn {
-    display: flex;
-    color: var(--primaryTextColor);
-    background-color: var(--backgroundColor);
-    border-color: var(--primaryTextColor);
-    border-radius: 10px;
-    padding: 7px;
-    margin: 30px auto 0px;
-    cursor: pointer;
-}
-
-.ritualGoodsBtn:hover {
-  color: var(--backgroundColor);
-  background-color: var(--primaryTextColor);
-  border-color: var(--backgroundColor);
 }

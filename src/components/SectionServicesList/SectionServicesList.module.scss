@@ -32,8 +32,8 @@
     text-align: center;
 
     @include mq(mob-only) {
+        font-family: Open Sans SemiBold;
         font-size: 20px;
-        font-weight: 600;
         margin: 30px;
     }
 

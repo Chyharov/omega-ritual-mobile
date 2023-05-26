@@ -1,6 +1,6 @@
 import React from 'react';
 import WreathsHeader from '../../components/WreathsHeader/WreathsHeader'
-import FreshFlowersWreath from 'components/FreshFlowersWreath/FreshFlowersWreath';
+import SectionFreshFlowersWreath from 'components/SectionFreshFlowersWreath/SectionFreshFlowersWreath';
 
 const freshFlowersWreathPage = () => {
 
@@ -8,7 +8,7 @@ const freshFlowersWreathPage = () => {
       <>
         <WreathsHeader />
         <main>
-          <FreshFlowersWreath />
+          <SectionFreshFlowersWreath />
         </main>
         
       </>

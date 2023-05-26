@@ -28,9 +28,9 @@
 .hero__title {
   text-align: center;
   @include mq(mob-only) {
+    font-family: Open Sans SemiBold;
     font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   @include mq(tab) {
@@ -43,12 +43,11 @@
 
 .hero__address {
   @include mq(mob) {
+  font-family: Open Sans Regular;
   text-align: center;
   font-size: 15px;
-  font-weight: 400;
   line-height: 1.38;
   width: 220px;
   margin: 0 auto;
   }
-
 }

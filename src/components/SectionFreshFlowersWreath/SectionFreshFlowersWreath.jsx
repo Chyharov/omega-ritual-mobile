@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import ModalWindow from 'components/ModalWindow/ModalWindow';
-import s from './FreshFlowersWreath.module.scss'
+import s from './SectionFreshFlowersWreath.module.scss'
 
-const FreshFlowersWreath = () => {
+const SectionFreshFlowersWreath = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImageSrc, setSelectedImageSrc] = useState('');
   const [selectedImageAlt, setSelectedImageAlt] = useState('');
@@ -121,4 +121,4 @@ const FreshFlowersWreath = () => {
     );
   };
 
-export default FreshFlowersWreath;
+export default SectionFreshFlowersWreath;

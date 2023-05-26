@@ -14,7 +14,6 @@ const SectionRitualGoods = () => {
           ><p className={s.ritualGoodsDiscription}>вул. Івана Федорова, 33 у місті Київ.</p></a></p>
 
           <p className={s.ritualGoodsDiscription}>В наявності є більше 100 різних ритуальних товарів, які ми продаємо за найнижчими цінами у місті Київ. При покупці ритуальної труни або ритуальних вінків ми робимо великі знижки на багато ритуальних речей.</p>
-          <button type='button' className={s.ritualGoodsBtn}>Дізнатись більше</button>
         </div>
 
       </div>

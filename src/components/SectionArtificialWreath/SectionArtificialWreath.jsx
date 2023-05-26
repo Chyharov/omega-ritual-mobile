@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import ModalWindow from 'components/ModalWindow/ModalWindow';
-import s from './ArtificialWreath.module.scss'
+import s from './SectionArtificialWreath.module.scss'
 
-const ArtificialWreaths = () => {
+const SectionArtificialWreath = () => {
 
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImageSrc, setSelectedImageSrc] = useState('');
@@ -121,4 +121,4 @@ const ArtificialWreaths = () => {
     );
   };
 
-export default ArtificialWreaths;
+export default SectionArtificialWreath;
