@@ -2,7 +2,7 @@ import s from '../SectionHero/SectionHero.module.scss';
 
 const SectionHero = () => {
   return (
-    <section className={s.hero} id='main'>
+    <section className={s.sectionHero} id='main'>
       <div className="container">
         <div className={s.hero__container}>
           <h1 className={s.hero__title}>СКЛАД-МАГАЗИН РИТУАЛЬНОЇ АТРИБУТИКИ</h1>

@@ -5,73 +5,60 @@ import s from '../SectionServicesList/SectionServicesList.module.scss';
 const SectionServicesList = () => {
   return (
     <section className={s.SectionServicesList} id='servicesList'>
-          <div className={'container ' + s.ritualServices__container}>
+      <div className={'container ' + s.ritualServices__container}>
 
-                  
-            <ul className={s.ritualServices__list}>
+        <ul className={s.ritualServices__list}>
                       
-                  <li className={s.ritualServices__listItem}>
-                    <Link className={s.ritualServices__link} to="/wreaths">
-                    <div className={s.ritualServices__border}>
-                        <h2 className={s.ritualServices__title}>Вінки</h2>
-                            <div className={s.ritualServices__background}>
-                            </div>
-                    </div>
-                    </Link>
-                </li>
+          <li className={s.ritualServices__listItem}>
+            <Link className={s.ritualServices__link} to="/wreaths">
+              <div className={s.ritualServices__border}>
+                <h2 className={s.ritualServices__title}>Вінки</h2>
+              </div>
+            </Link>
+          </li>
                 
-                  <li className={s.ritualServices__listItem}>
-                      <Link className={s.ritualServices__link} to="/coffins">
-                    <div className={s.ritualServices__border}>
-                        <h2 className={s.ritualServices__title}>Труни</h2>
-                        <div className={s.ritualServices__background}>
-                        </div>
-                      </div>
-                      </Link>
-                </li>
+          <li className={s.ritualServices__listItem}>
+            <Link className={s.ritualServices__link} to="/coffins">
+              <div className={s.ritualServices__border}>
+                <h2 className={s.ritualServices__title}>Труни</h2>
+              </div>
+            </Link>
+          </li>
                       
-                  <li className={s.ritualServices__listItem}>
-                      <Link className={s.ritualServices__link} to="/crosses">
-                    <div className={s.ritualServices__border}>
-                        <h2 className={s.ritualServices__title}>Хрести</h2>
-                        <div className={s.ritualServices__background}>
+          <li className={s.ritualServices__listItem}>
+            <Link className={s.ritualServices__link} to="/crosses">
+              <div className={s.ritualServices__border}>
+                <h2 className={s.ritualServices__title}>Хрести</h2>
+              </div>
+            </Link>
+          </li>
+                      
+          <li className={s.ritualServices__listItem}>
+            <Link className={s.ritualServices__link} to="/monuments">
+              <div className={s.ritualServices__border}>
+                <h2 className={s.ritualServices__title}>Пам`ятники</h2>
+              </div>
+            </Link>
+          </li>
+                      
+          <li className={s.ritualServices__listItem}>
+            <Link className={s.ritualServices__link} to="/covered">
+              <div className={s.ritualServices__border}>
+                <h2 className={s.ritualServices__title}>Покривала</h2>
+              </div>
+            </Link>
+          </li>
+                      
+          <li className={s.ritualServices__listItem}>
+            <Link className={s.ritualServices__link} to="/otherattributes">
+              <div className={s.ritualServices__border}>
+                <h2 className={s.ritualServices__title}>Інша атрибутика</h2>
+              </div>
+            </Link>
+          </li>      
 
-                        </div>
-                      </div>
-                      </Link>
-                </li>
-                      
-                  <li className={s.ritualServices__listItem}>
-                      <Link className={s.ritualServices__link} to="/monuments">
-                    <div className={s.ritualServices__border}>
-                        <h2 className={s.ritualServices__title}>Пам`ятники</h2>
-                        <div className={s.ritualServices__background}>
-                        </div>
-                          </div>
-                          </Link>
-                </li>
-                      
-                  <li className={s.ritualServices__listItem}>
-                      <Link className={s.ritualServices__link} to="/covered">
-                    <div className={s.ritualServices__border}>
-                        <h2 className={s.ritualServices__title}>Покривала</h2>
-                        <div className={s.ritualServices__background}>
-                        </div>
-                          </div>
-                          </Link>
-                </li>
-                      
-                  <li className={s.ritualServices__listItem}>
-                      <Link className={s.ritualServices__link} to="/otherattributes">
-                    <div className={s.ritualServices__border}>
-                        <h2 className={s.ritualServices__title}>Інша атрибутика</h2>
-                        <div className={s.ritualServices__background}>
-                        </div>
-                      </div>
-                      </Link>
-                </li>      
-            </ul>     
-        </div>
+        </ul>     
+      </div>
     </section>
   );
 };

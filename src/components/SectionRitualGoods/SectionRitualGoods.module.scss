@@ -24,18 +24,21 @@
   width: 280px;
   margin-left: auto;
   margin-right: auto;
+
+  @include mq(tab) {
+      width: 700px;
+    }
 }
 
 .ritualGoods__title {
+  font-family: Open Sans SemiBold;
+  font-size: 20px;
+  line-height: 1.38;
   text-align: center;
-  @include mq(mob-only) {
-    font-family: Open Sans SemiBold;
-    font-size: 20px;
-    line-height: 1.38;
-    margin-bottom: 30px;
-  }
+  margin-bottom: 30px;
 
   @include mq(tab) {
+    font-size: 25px;
   }
 
   @include mq(desk) {
@@ -47,6 +50,10 @@
   font-family: Open Sans Regular;
   font-size: 13px;
   line-height: 1.38;
+
+  @include mq(tab) {
+      font-size: 18px;
+    }
 }
 
 .ritualGoodsDiscription:first-child {

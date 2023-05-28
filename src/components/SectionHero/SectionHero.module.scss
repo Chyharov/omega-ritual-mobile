@@ -1,6 +1,6 @@
 @import '../../sass/utils/mixin';
 
-.hero {
+.sectionHero {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,6 +22,10 @@
   width: 280px;
   margin-left: auto;
   margin-right: auto;
+
+  @include mq(tab) {
+    width: 700px;
+  }
 }
 
 .hero__title {
@@ -34,6 +38,10 @@
   }
 
   @include mq(tab) {
+    font-family: Open Sans SemiBold;
+    font-size: 25px;
+    line-height: 1.38;
+    margin-bottom: 20px;
   }
 
   @include mq(desk) {
@@ -42,12 +50,20 @@
 }
 
 .hero__address {
+  text-align: center;
+
   @include mq(mob) {
   font-family: Open Sans Regular;
-  text-align: center;
   font-size: 15px;
   line-height: 1.38;
   width: 220px;
   margin: 0 auto;
+  }
+
+  @include mq(tab) {
+    font-family: Open Sans Regular;
+    font-size: 18px;
+    line-height: 1.38;
+    width: 700px;
   }
 }
