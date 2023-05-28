@@ -8,7 +8,8 @@ const NavLinks = (props) => {
     const animateTo = { opacity: 1, y: 0 }
 
 
-    return ( 
+    return (
+        <div className='container'>
         <ul className={s.menu__list}>
 
             <motion.li 
@@ -97,7 +98,8 @@ const NavLinks = (props) => {
             </motion.li>
             
 
-        </ul>
+            </ul>
+            </div>
      );
 }
  

@@ -10,20 +10,21 @@
   padding-top: 20px;
   padding-bottom: 20px;
   outline: 1px solid var(--primaryTextColor);
+  &--active {
+     composes: header;
+   }
   @include mq(tab) {
 
   }
 
- &--active {
-    composes: header;
-  }
 }
 
 .header__container {
   @include mq(tab) {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-bottom: 20px;
   }
 }
 

@@ -14,7 +14,7 @@
 
     @include mq(tab) {
     display: flex;
-    justify-content: center;        
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     width: 100%;
@@ -22,19 +22,23 @@
 }
 
 .menu__list_link {
-    color: #fff;
-    font-size: 1.3rem;
+  color: #fff;
+  font-size: 1.1rem;
 }
 
 .menu__list_item {
-    display: flex;
-    align-items: center;
-    margin: 10px;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu__list_item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .menu__list_item a:hover {
     border-bottom: 5px solid var(--primaryTextColor);
+    margin-bottom: -5px;
 }
 
 .navBar {

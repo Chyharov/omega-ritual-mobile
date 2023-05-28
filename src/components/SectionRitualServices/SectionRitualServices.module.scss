@@ -31,7 +31,8 @@
   @include mq(mob-only) {
     font-family: Open Sans SemiBold;
     font-size: 20px;
-    margin-bottom: 30px;
+    line-height: 1.38;
+    margin-bottom: 20px;
   }
 
   @include mq(tab) {
@@ -45,6 +46,7 @@
 .ritualServices__description {
   font-family: Open Sans Regular;
   font-size: 13px;
-  margin-bottom: 30px;
+  line-height: 1.38;
+  margin-bottom: 20px;
 }
 

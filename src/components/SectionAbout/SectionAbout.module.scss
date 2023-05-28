@@ -32,6 +32,7 @@
   text-align: center;
   @include mq(mob-only) {
     font-family: Open Sans SemiBold;
+    line-height: 1.38;
     font-size: 20px;
   }
 
@@ -46,6 +47,7 @@
   text-align: center;
   @include mq(mob-only) {
     font-family: Open Sans Regular;
+    line-height: 1.38;
     font-size: 13px;
     margin-bottom: 20px;
   }
@@ -80,6 +82,7 @@
 
   @include mq(mob-only) {
   font-family: Open Sans Regular;
+  line-height: 1.38;
   font-size: 13px;
   width: 240px;
   margin: 0 auto;

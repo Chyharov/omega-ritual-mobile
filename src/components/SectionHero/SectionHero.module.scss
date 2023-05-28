@@ -9,8 +9,7 @@
   background-color: var(--backgroundColor);
 
   @include mq(tab) {
-    color: var(--primaryTextColor);
-    background-color: var(--backgroundColor);
+    padding: 160px 0px 30px;
   }
 
   @include mq(desk) {
@@ -30,6 +29,7 @@
   @include mq(mob-only) {
     font-family: Open Sans SemiBold;
     font-size: 20px;
+    line-height: 1.38;
     margin-bottom: 20px;
   }
 
