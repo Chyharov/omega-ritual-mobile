@@ -133,9 +133,9 @@ const SectionCoffins = () => {
                 <p className={s.coffins__description}>Ціна елітної лакованої дерев’яної труни або двокришкового саркофага залежить від породи дерева, глибини ручного опрацювання декору, якості лакофарбових матеріалів, оббивних тканин та фурнітури.</p>
                 
                 <ul className={s.coffins__list}>
-                    <li className={s.coffins__listItem}>Для елітної внутрішньої оббивки та зовнішнього текстильного декору ми використовуємо Італійські тканини найвищої якості.</li>
-                    <li className={s.coffins__listItem}>Тільки високоміцна престижна фурнітура, включаючи ручки та замки з дорогих металів.</li>
-                    <li className={s.coffins__listItem}>Покриття дерева тільки найкращим лаком у кілька шарів, що робить поверхню ідеально рівною та з багатим блиском.</li>
+                    <li className={s.coffins__listItem}><p className={s.coffins__listItemDescription}>Для елітної внутрішньої оббивки та зовнішнього текстильного декору ми використовуємо Італійські тканини найвищої якості.</p></li>
+                    <li className={s.coffins__listItem}><p className={s.coffins__listItemDescription}>Тільки високоміцна престижна фурнітура, включаючи ручки та замки з дорогих металів.</p></li>
+                    <li className={s.coffins__listItem}><p className={s.coffins__listItemDescription}>Покриття дерева тільки найкращим лаком у кілька шарів, що робить поверхню ідеально рівною та з багатим блиском.</p></li>
                 </ul>
                 
                 <p className={s.coffins__description}>Кожна така труна робиться майстрами кілька днів, через що її вартість виходить порівняно високою. При цьому ми не женемося за надприбутком і пропонуємо чесні ціни, які повністю відображають всю повноту копіткої багатоденної праці майстрів і елітних матеріалів, що використовуються.</p>
@@ -146,7 +146,7 @@ const SectionCoffins = () => {
                 <ul className={s.coffins__pictureList}>
                     {CoffinsPictureElitePriceList.map((image) => (
                     <li className={s.coffins__pictureListItem} key={image.id}>
-                        <img className={s.coffinsictureList__img} src={image.src} alt={image.alt} onClick={() => openModal(image.src, image.alt)}/>
+                        <img className={s.coffinsPictureElitePriceList__img} src={image.src} alt={image.alt} onClick={() => openModal(image.src, image.alt)}/>
                     </li>
                     ))}
                 </ul>
@@ -158,7 +158,7 @@ const SectionCoffins = () => {
                 <ul className={s.coffins__pictureList}>
                     {CoffinsPictureAveragePriceList.map((image) => (
                     <li className={s.coffins__pictureListItem} key={image.id}>
-                        <img className={s.coffinsictureList__img} src={image.src} alt={image.alt} onClick={() => openModal(image.src, image.alt)}/>
+                        <img className={s.coffinsPictureAveragePriceList__img} src={image.src} alt={image.alt} onClick={() => openModal(image.src, image.alt)}/>
                     </li>
                     ))}
                 </ul>
@@ -170,7 +170,7 @@ const SectionCoffins = () => {
                 <ul className={s.coffins__pictureList}>
                     {CoffinsPictureEconomPriceList.map((image) => (
                     <li className={s.coffins__pictureListItem} key={image.id}>
-                        <img className={s.coffinsictureList__img} src={image.src} alt={image.alt} onClick={() => openModal(image.src, image.alt)}/>
+                        <img className={s.coffinsPictureEconomPriceList__img} src={image.src} alt={image.alt} onClick={() => openModal(image.src, image.alt)}/>
                     </li>
                     ))}
                 </ul>

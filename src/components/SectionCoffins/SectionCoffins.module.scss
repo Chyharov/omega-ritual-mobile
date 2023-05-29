@@ -1,5 +1,8 @@
+@import '../../sass/utils/mixin';
+
 .sectionCoffinsWreaths {
     background-color: var(--backgroundColor);
+    color: var(--primaryTextColor);
     padding-top: 70px;
 }
 
@@ -10,25 +13,33 @@
 .coffinsDescriptionContainer {
     padding: 10px;
     outline: 1px solid var(--primaryTextColor);
+
+    @include mq(tab) {
+        padding: 20px;
+    }
 }
 
 .coffins__title {
-    text-align: center;
     font-family: Open Sans SemiBold;
     font-size: 20px;
-    font-weight: 600;
-    padding-top: 20px;
+    line-height: 1.38;
+    text-align: center;
     padding-bottom: 20px;
-    color: var(--primaryTextColor);
 
+    @include mq(tab) {
+        font-size: 25px;
+    }
 }
 
 .coffins__description {
     font-family: Open Sans Regular;
-    font-size: 15px;
-    text-align: inherit;
-    color: var(--primaryTextColor);
+    font-size: 13px;
+    line-height: 1.38;
     padding-bottom: 20px;
+
+    @include mq(tab) {
+        font-size: 18px;
+    }
 }
 
 .coffins__list {
@@ -43,8 +54,25 @@
     margin-bottom: 10px;
 }
 
+.coffins__listItemDescription {
+    font-family: Open Sans Regular;
+    font-size: 13px;
+    line-height: 1.38;
+    padding-bottom: 20px;
+    
+    @include mq(tab) {
+        font-size: 18px;
+    }
+}
+
 .coffins__listSpan {
-    font-weight: 600;
+    font-family: Open Sans Medium;
+    font-size: 18px;
+    line-height: 1.38;
+    
+    @include mq(tab) {
+        font-size: 25px;
+    }
 }
 
 .coffins__pictureList {
@@ -52,26 +80,50 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
 
+    @include mq(tab) {
+        grid-gap: 20px;
+    }
 }
 
-.coffinsPictureList__img {
+.coffinsPictureElitePriceList__img,
+.coffinsPictureAveragePriceList__img {
     width: 125px;
+
+    @include mq(tab) {
+        width: 330px;
+        height: 220px;
+    }
+}
+
+.coffinsPictureEconomPriceList__img {
+    width: 125px;
+
+    @include mq(tab) {
+        width: 330px;
+        height: 500px;
+    }
 }
 
 .coffinsPictureList__description {
     font-family: Open Sans Regular;
-    font-size: 15px;
-    text-align: inherit;
-    color: var(--primaryTextColor);
+    font-size: 13px;
+    line-height: 1.38;
     text-align: center;
+
+    @include mq(tab) {
+        font-size: 18px;
+    }
 }
 
 .coffins__descriptionlast {
     font-family: Open Sans Regular;
-    font-size: 15px;
-    text-align: inherit;
-    color: var(--primaryTextColor);
+    font-size: 13px;
+    line-height: 1.38;
     padding-top: 20px;
+
+    @include mq(tab) {
+        font-size: 18px;
+    }
 }
 
 .modal {
@@ -94,6 +146,10 @@
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     outline: 1px solid var(--primaryTextColor);
+
+    @include mq(tab) {
+        max-width: 700px;
+    }
 }
 
 .modalImage {
