@@ -1,3 +1,5 @@
+@import '../../sass/utils/mixin';
+
 .sectionArtificialWreaths {
     background-color: var(--backgroundColor);
     padding-top: 70px;
@@ -10,25 +12,35 @@
 .artificialWreathsDescriptionContainer {
     padding: 10px;
     outline: 1px solid var(--primaryTextColor);
+
+    @include mq(tab) {
+        padding: 20px;
+    }
 }
 
 .artificialWreath__title {
     text-align: center;
     font-family: Open Sans SemiBold;
     font-size: 20px;
-    font-weight: 600;
-    padding-top: 20px;
+    line-height: 1.38;
     padding-bottom: 20px;
     color: var(--primaryTextColor);
 
+    @include mq(tab) {
+        font-size: 25px;
+    }
 }
 
 .artificialWreath__description {
     font-family: Open Sans Regular;
-    font-size: 15px;
-    text-align: inherit;
+    font-size: 13px;
+    line-height: 1.38;
     color: var(--primaryTextColor);
     padding-bottom: 20px;
+
+    @include mq(tab) {
+        font-size: 18px;
+    }
 }
 
 .artificialWreath__list {
@@ -44,26 +56,54 @@
 }
 
 .artificialWreath__listSpan {
-    font-weight: 600;
+    font-family: Open Sans Medium;
+    font-size: 18px;
+    line-height: 1.38;
+
+    @include mq(tab) {
+        font-size: 25px;
+    }
+}
+
+.artificialWreath__listItemDescription {
+    font-family: Open Sans Regular;
+    font-size: 13px;
+    line-height: 1.38;
+    
+    @include mq(tab) {
+        font-size: 18px;
+    }
 }
 
 .artificialWreath__pictureList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
-
+    justify-items: center;
+    
+    @include mq(tab) {
+        grid-gap: 20px;
+    }
 }
 
 .artificialWreathPictureList_img {
     width: 125px;
     height: 190px;
     padding-bottom: 10px;
+
+    @include mq(tab) {
+        width: 320px;
+        height: 500px;
+    }
 }
 
 .artificialWreathPictureList__description {
     font-family: Open Sans Regular;
-    font-size: 15px;
-    text-align: inherit;
+    font-size: 13px;
     color: var(--primaryTextColor);
     text-align: center;
+
+    @include mq(tab) {
+    font-size: 18px;
+    }
 }

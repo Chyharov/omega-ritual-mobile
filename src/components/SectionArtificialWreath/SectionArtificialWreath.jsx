@@ -74,17 +74,17 @@ const SectionArtificialWreath = () => {
                 <p className={s.artificialWreath__description}>Ритуальний вінок може бути будь-якої форми. Він висловлює почуття, відчуття і ставлення до покійного людини, яка виключно підносить таку композицію. Серед найпоширеніших форм:</p>
 
                 <ul className={s.artificialWreath__list}>
-                    <li className={s.artificialWreath__listItem}><span className={s.artificialWreath__listSpan}>Круглий</span> – найдавніший символ нескінченності буття та відродження. Це сонце як джерело вічного життя. Круглі вінки можуть бути складені кільцем або із суцільним заповненням живими квітами.</li>
-                    <li className={s.artificialWreath__listItem}><span className={s.artificialWreath__listSpan}>Серце</span> – найвідоміший символ кохання, який виражає щирі почуття до померлого та їх нетлінність навіть після смерті.</li>
-                    <li className={s.artificialWreath__listItem}><span className={s.artificialWreath__listSpan}>Крапля</span> – традиційний у нашій культурі жалобний вінок. Каплеподібна форма символізує скорботу і смуток за вчасною втратою дорогої людини. Така форма за іншою версією символізує полум’я, що очищає, спрямоване вгору на небеса.</li>
+                    <li className={s.artificialWreath__listItem}><p className={s.artificialWreath__listItemDescription}><span className={s.artificialWreath__listSpan}>Круглий</span> – найдавніший символ нескінченності буття та відродження. Це сонце як джерело вічного життя. Круглі вінки можуть бути складені кільцем або із суцільним заповненням живими квітами.</p></li>
+                    <li className={s.artificialWreath__listItem}><p className={s.artificialWreath__listItemDescription}><span className={s.artificialWreath__listSpan}>Серце</span> – найвідоміший символ кохання, який виражає щирі почуття до померлого та їх нетлінність навіть після смерті.</p></li>
+                    <li className={s.artificialWreath__listItem}><p className={s.artificialWreath__listItemDescription}><span className={s.artificialWreath__listSpan}>Крапля</span> – традиційний у нашій культурі жалобний вінок. Каплеподібна форма символізує скорботу і смуток за вчасною втратою дорогої людини. Така форма за іншою версією символізує полум’я, що очищає, спрямоване вгору на небеса.</p></li>
                 </ul>
                 
                 <p className={s.artificialWreath__description}>Символізм мають і самі штучні квіти, кількість їх видів та кольорова гама:</p>
 
                 <ul className={s.artificialWreath__list}>
-                    <li className={s.artificialWreath__listItem}>молодим непорочним дівчатам та дітям подають вінки з білих та фіолетових троянд або лілій, як символ чистоти душі;</li>
-                    <li className={s.artificialWreath__listItem}>тим, хто прожив важке життя і військовим вінки на похорон складають переважно з червоних штучних троянд і гвоздик;</li>
-                    <li className={s.artificialWreath__listItem}>для вираження глибокої скорботи вінок прикрашають ялиновими гілками.</li>
+                    <li className={s.artificialWreath__listItem}><p className={s.artificialWreath__listItemDescription}>молодим непорочним дівчатам та дітям подають вінки з білих та фіолетових троянд або лілій, як символ чистоти душі;</p></li>
+                    <li className={s.artificialWreath__listItem}><p className={s.artificialWreath__listItemDescription}>тим, хто прожив важке життя і військовим вінки на похорон складають переважно з червоних штучних троянд і гвоздик;</p></li>
+                    <li className={s.artificialWreath__listItem}><p className={s.artificialWreath__listItemDescription}>для вираження глибокої скорботи вінок прикрашають ялиновими гілками.</p></li>
                 </ul>
                 
                 <p className={s.artificialWreath__description}>Використовують трохи більше п’яти видів квіток. Не можна перевантажувати вінок занадто темними, чорними та темно-червоними штучними кольорами. Це ще більше посилить траурну обстановку на похороні та погіршить емоційний стан усіх присутніх на церемонії прощання.</p>
