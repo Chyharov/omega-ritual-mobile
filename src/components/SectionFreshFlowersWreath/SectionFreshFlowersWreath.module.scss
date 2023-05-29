@@ -1,3 +1,5 @@
+@import '../../sass/utils/mixin';
+
 .sectionFreshFlowersWreath {
     background-color: var(--backgroundColor);
     padding-top: 70px;
@@ -8,7 +10,7 @@
 }
 
 .freshFlowersWreathDescriptionContainer {
-    padding: 10px;
+    padding: 20px;
     outline: 1px solid var(--primaryTextColor);
 }
 
@@ -16,19 +18,27 @@
     text-align: center;
     font-family: Open Sans SemiBold;
     font-size: 20px;
-    font-weight: 600;
-    padding-top: 20px;
+    line-height: 1.38;
     padding-bottom: 20px;
     color: var(--primaryTextColor);
+
+    @include mq(tab) {
+        font-size: 25px;
+    }
 
 }
 
 .freshFlowersWreath__description {
     font-family: Open Sans Regular;
-    font-size: 15px;
+    font-size: 13px;
+    line-height: 1.38;
     text-align: inherit;
     color: var(--primaryTextColor);
     padding-bottom: 20px;
+
+    @include mq(tab) {
+        font-size: 18px;
+    }
 }
 
 .freshFlowersWreath__list {
@@ -44,16 +54,41 @@
 }
 
 .freshFlowersWreath__listSpan {
-    font-weight: 600;
+    font-family: Open Sans Medium;
+    font-size: 18px;
+    line-height: 1.38;
+
+    @include mq(tab) {
+        font-size: 25px;
+    }
 }
 
 .freshFlowersWreathPictureList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+    justify-items: center;
 
+    @include mq(tab) {
+        grid-gap: 20px;
+    }
+}
+
+.freshFlowersWreath__listItemDescription {
+    font-family: Open Sans Regular;
+    font-size: 13px;
+    line-height: 1.38;
+
+    @include mq(tab) {
+        font-size: 18px;
+    }
 }
 
 .freshFlowersWreathPictureList_img {
     width: 125px;
+
+    @include mq(tab) {
+            width: 320px;
+            height: 500px;
+        }
 }

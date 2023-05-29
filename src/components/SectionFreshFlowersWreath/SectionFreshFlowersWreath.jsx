@@ -68,11 +68,11 @@ const SectionFreshFlowersWreath = () => {
               <p className={s.freshFlowersWreath__description}>Вибір квіткової композиції, її форма, склад та колірна гама не регламентуються жодними жорсткими правилами та релігійними канонами, принаймні у християнстві. Це виключно особиста справа кожного та його спосіб висловити свою скорботу щодо втрати, безмежну любов і повагу до покійного. Похоронна квіткова композиція може бути у будь-якому вигляді:</p>
         
               <ul className={s.freshFlowersWreath__list}>
-                <li className={s.freshFlowersWreath__listItem}>вінок із живих квітів;</li>
-                <li className={s.freshFlowersWreath__listItem}>траурний букет;</li>
-                <li className={s.freshFlowersWreath__listItem}>квітковий кошик;</li>
-                <li className={s.freshFlowersWreath__listItem}>надгробна композиція;</li>
-                <li className={s.freshFlowersWreath__listItem}>монограма.</li>
+                <li className={s.freshFlowersWreath__listItem}><p className={s.freshFlowersWreath__listItemDescription}>вінок із живих квітів;</p></li>
+                <li className={s.freshFlowersWreath__listItem}><p className={s.freshFlowersWreath__listItemDescription}>траурний букет;</p></li>
+                <li className={s.freshFlowersWreath__listItem}><p className={s.freshFlowersWreath__listItemDescription}>квітковий кошик;</p></li>
+                <li className={s.freshFlowersWreath__listItem}><p className={s.freshFlowersWreath__listItemDescription}>надгробна композиція;</p></li>
+                <li className={s.freshFlowersWreath__listItem}><p className={s.freshFlowersWreath__listItemDescription}>монограма.</p></li>
               </ul>
 
               <p className={s.freshFlowersWreath__description}>Незважаючи на відсутність будь-яких суворих правил, існують специфічні культурні традиції та символізм, який вкладають у траурну квіткову композицію.</p>
@@ -82,9 +82,9 @@ const SectionFreshFlowersWreath = () => {
               <p className={s.freshFlowersWreath__description}>Сам вінок на похороні може бути будь-якої форми, найбільш традиційні три з них.</p>
 
               <ul className={s.freshFlowersWreath__list}>
-                <li className={s.freshFlowersWreath__listItem}><span className={s.freshFlowersWreath__listSpan}>Круглий</span> – найдавніший символ нескінченності буття та відродження. Це сонце як джерело вічного життя. Круглі вінки можуть бути складені кільцем або із суцільним заповненням живими квітами.</li>
-                <li className={s.freshFlowersWreath__listItem}><span className={s.freshFlowersWreath__listSpan}>Серце</span> – найвідоміший символ кохання, який виражає щирі почуття до померлого та їх нетлінність навіть після смерті.</li>
-                <li className={s.freshFlowersWreath__listItem}><span className={s.freshFlowersWreath__listSpan}>Крапля</span> – традиційний у нашій культурі жалобний вінок. Каплеподібна форма символізує скорботу і смуток за вчасною втратою дорогої людини. Така форма за іншою версією символізує полум’я, що очищає, спрямоване вгору на небеса.</li>
+                <li className={s.freshFlowersWreath__listItem}><p className={s.freshFlowersWreath__listItemDescription}><span className={s.freshFlowersWreath__listSpan}>Круглий</span> – найдавніший символ нескінченності буття та відродження. Це сонце як джерело вічного життя. Круглі вінки можуть бути складені кільцем або із суцільним заповненням живими квітами.</p></li>
+                <li className={s.freshFlowersWreath__listItem}><p className={s.freshFlowersWreath__listItemDescription}><span className={s.freshFlowersWreath__listSpan}>Серце</span> – найвідоміший символ кохання, який виражає щирі почуття до померлого та їх нетлінність навіть після смерті.</p></li>
+                <li className={s.freshFlowersWreath__listItem}><p className={s.freshFlowersWreath__listItemDescription}><span className={s.freshFlowersWreath__listSpan}>Крапля</span> – традиційний у нашій культурі жалобний вінок. Каплеподібна форма символізує скорботу і смуток за вчасною втратою дорогої людини. Така форма за іншою версією символізує полум’я, що очищає, спрямоване вгору на небеса.</p></li>
               </ul>
             
               <p className={s.freshFlowersWreath__description}>Традиційно червоними живими квітами (цвяхами та трояндами) прикрашають жалобні вінки на похоронах чоловіків та людей з тяжкою долею. Фіолетові або білі троянди та лілії використовують для похоронних квіткових композицій для покійних молодих дівчат та дітей як символ духовної чистоти. Гілки сосни, ялиці та туї – символ любові до покійного та скорботи за втратою. У православній традиції використовують і гілки верби як символізм переходу душі в Царство Небесне.</p>
