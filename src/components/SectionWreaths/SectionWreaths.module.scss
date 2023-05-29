@@ -1,36 +1,53 @@
+@import '../../sass/utils/mixin';
+
 .wreathsPageTitle {
-    text-align: center;
     font-family: Open Sans SemiBold;
     font-size: 20px;
-    font-weight: 600;
+    line-height: 1.38;
     padding-top: 20px;
+    text-align: center;
     padding-bottom: 20px;
     color: var(--primaryTextColor);
+
+    @include mq(tab) {
+    font-size: 25px;
+    }
 }
 
 .freshFlowers {
-    padding-top: 10px;
     margin: 0 auto;
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
+
+    @include mq(tab) {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .wreathsLinksTitle {
     font-family: Open Sans SemiBold;
     font-size: 15px;
-    font-weight: 600;
+    line-height: 1.38;
     margin-top: 20px;
-    padding-bottom: 10px;
     text-align: center;
     color: var(--primaryTextColor);
+
+    @include mq(tab) {
+        font-size: 20px;
+    }
 }
 
 .wreathsPageDescription {
     font-family: Open Sans Regular;
-    font-size: 15px;
-    text-align: inherit;
+    font-size: 13px;
+    line-height: 1.38;
     color: var(--primaryTextColor);
     padding-bottom: 20px;
+
+    @include mq(tab) {
+    font-size: 18px;
+    }
 }
 
 .wreathsContainer {
@@ -39,19 +56,32 @@
 }
 
 .wreathsdDescriptionContainer {
-    padding: 10px;
+    padding: 20px;
     outline: 1px solid var(--primaryTextColor);
     background-color: var(--backgroundColor);
+
+    @include mq(tab) {
+        padding: 30px 20px 20px 20px;
+    }
 }
 
-.wreathsPageDescription__listItem {
-    font-family: Open Sans Regular;
+.wreathsPage__listItem {
     color: var(--primaryTextColor);
     list-style: disc;
     margin-bottom: 10px;
 }
 
-.wreathsPageDescription__list {
+.wreathsPage__listItemDescription {
+    font-family: Open Sans Regular;
+    font-size: 13px;
+    line-height: 1.38;
+
+    @include mq(tab) {
+        font-size: 18px;
+    }
+}
+
+.wreathsPage__list {
     list-style: disc;
     padding-left: 20px;
     margin-bottom: 20px;
@@ -69,10 +99,21 @@
 .wreathsLinksContainer {
     display: flex;
     justify-content: space-between;
+
+    @include mq(tab) {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 .wreathsLinks {
-    width: 120px;
+    padding: 10px;
+    width: 110px;
     outline: 1px solid var(--primaryTextColor);
+
+    @include mq(tab) {
+        padding: 20px;
+        width: 300px;
+    }
 
 }

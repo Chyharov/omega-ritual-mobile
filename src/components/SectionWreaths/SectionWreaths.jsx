@@ -35,11 +35,11 @@ const SectionWreath = () => {
             <h2 className={s.wreathsPageTitle}>Які квіти найкращі для похоронного вінка?</h2>
             <p className={s.wreathsPageDescription}>Це питання також жодними правилами, традиціями та християнськими ритуалами не регламентовано. Однак ритуальні похоронні вінки все ж таки можуть бути наповнені особливим символізмом, який виражається через колірну гаму та поєднання тих чи інших кольорів.</p>
             
-            <ul className={s.wreathsPageDescription__list}>
-              <li className={s.wreathsPageDescription__listItem}>Білі лілії та троянди у поєднанні з фіалками символізують духовну чистоту.</li>
-              <li className={s.wreathsPageDescription__listItem}>Червоні гвоздики та троянди – символ страждань та важкого земного життя покійного.</li>
-              <li className={s.wreathsPageDescription__listItem}>Хвойні гілки у поєднанні з барвінком виражають вічне кохання до покійного.</li>
-              <li className={s.wreathsPageDescription__listItem}>Гілки верби символізують перехід у Царство Небесне.</li>
+            <ul className={s.wreathsPage__list}>
+              <li className={s.wreathsPage__listItem}><p className={s.wreathsPage__listItemDescription}>Білі лілії та троянди у поєднанні з фіалками символізують духовну чистоту.</p></li>
+              <li className={s.wreathsPage__listItem}><p className={s.wreathsPage__listItemDescription}>Червоні гвоздики та троянди – символ страждань та важкого земного життя покійного.</p></li>
+              <li className={s.wreathsPage__listItem}><p className={s.wreathsPage__listItemDescription}>Хвойні гілки у поєднанні з барвінком виражають вічне кохання до покійного.</p></li>
+              <li className={s.wreathsPage__listItem}><p className={s.wreathsPage__listItemDescription}>Гілки верби символізують перехід у Царство Небесне.</p></li>
             </ul>
 
             
@@ -48,13 +48,13 @@ const SectionWreath = () => {
             <h2 className={s.wreathsPageTitle}>Правила складання похоронного вінка</h2>
             <p className={s.wreathsPageDescription}>Незважаючи на досить вільні традиції та відсутність чітких ритуальних засад, існують деякі правила, що склалися в культурі нашого народу, яких прийнято дотримуватися.</p>
             
-            <ul className={s.wreathsPageDescription__list}>
-              <li className={s.wreathsPageDescription__listItem}>Не більше п’яти видів квітів в одній жалобній композиції.</li>
-              <li className={s.wreathsPageDescription__listItem}>Не можна робити домінуючим чорний колір та поєднувати його з червоним. Така палітра кольору у вінках посилює пригнічення емоційного фону, чого не можна допускати на похороні.</li>
-              <li className={s.wreathsPageDescription__listItem}>Насичені глибокі кольори використовують у центрі вінка.</li>
-              <li className={s.wreathsPageDescription__listItem}>Ялинові гілки та зелений декор краще вибирати темно-зеленого відтінку.</li>
-              <li className={s.wreathsPageDescription__listItem}>Квіти та елементи декору блідих відтінків рожевого, блакитного та лимонного врівноважують насичені кольори.</li>
-              <li className={s.wreathsPageDescription__listItem}>Найбільш придатні для похоронного вінка – лілії, гвоздики, троянди та півонії.</li>  
+            <ul className={s.wreathsPage__list}>
+              <li className={s.wreathsPage__listItem}><p className={s.wreathsPage__listItemDescription}>Не більше п’яти видів квітів в одній жалобній композиції.</p></li>
+              <li className={s.wreathsPage__listItem}><p className={s.wreathsPage__listItemDescription}>Не можна робити домінуючим чорний колір та поєднувати його з червоним. Така палітра кольору у вінках посилює пригнічення емоційного фону, чого не можна допускати на похороні.</p></li>
+              <li className={s.wreathsPage__listItem}><p className={s.wreathsPage__listItemDescription}>Насичені глибокі кольори використовують у центрі вінка.</p></li>
+              <li className={s.wreathsPage__listItem}><p className={s.wreathsPage__listItemDescription}>Ялинові гілки та зелений декор краще вибирати темно-зеленого відтінку.</p></li>
+              <li className={s.wreathsPage__listItem}><p className={s.wreathsPage__listItemDescription}>Квіти та елементи декору блідих відтінків рожевого, блакитного та лимонного врівноважують насичені кольори.</p></li>
+              <li className={s.wreathsPage__listItem}><p className={s.wreathsPage__listItemDescription}>Найбільш придатні для похоронного вінка – лілії, гвоздики, троянди та півонії.</p></li>  
             </ul>
 
             <p className={s.wreathsPageDescription}>Для людей творчої натури та померлим у поважному віці використовують квіти червоних та темно-рожевих відтінків. Білі та фіолетові відтінки використовують у вінках на похороні молодих жінок.</p>
