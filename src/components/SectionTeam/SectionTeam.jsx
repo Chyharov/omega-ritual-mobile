@@ -6,11 +6,10 @@ const SectionTeam = () => {
     <section className={s.team} id='сontacts'>
       <div className="container">
         <ul className={s.team__list}>
-          {array.map(({ id, name, position, mobileNumber, homeNumber }) => (
+          {array.map(({ id, name, mobileNumber, homeNumber }) => (
             <li className={s.memberCard} key={id}>
               <div className={s.memberCard__content}>
                 <h3 className={s.memberCard__name}>{name}</h3>
-                <p className={s.memberCard__position}>{position}</p>
                 <a
                   className={s.memberCard__position}
                   href={`tel:${mobileNumber}`}
