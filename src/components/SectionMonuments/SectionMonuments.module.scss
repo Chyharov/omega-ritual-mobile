@@ -1,5 +1,8 @@
+@import '../../sass/utils/mixin';
+
 .sectionMonuments {
     background-color: var(--backgroundColor);
+    color: var(--primaryTextColor);
     padding-top: 70px;
 }
 
@@ -10,25 +13,35 @@
 .monumentsDescriptionContainer {
     padding: 10px;
     outline: 1px solid var(--primaryTextColor);
+
+    @include mq(tab) {
+        padding: 20px;
+    }
 }
 
 .monuments__title {
-    text-align: center;
     font-family: Open Sans SemiBold;
     font-size: 20px;
-    font-weight: 600;
-    padding-top: 20px;
+    line-height: 1.38;
+    text-align: center;
     padding-bottom: 20px;
-    color: var(--primaryTextColor);
+
+    @include mq(tab) {
+        font-size: 25px;
+    }
 
 }
 
 .monuments__description {
     font-family: Open Sans Regular;
-    font-size: 15px;
+    font-size: 13px;
+    line-height: 1.38;
     text-align: inherit;
-    color: var(--primaryTextColor);
     padding-bottom: 20px;
+
+    @include mq(tab) {
+            font-size: 18px;
+        }
 }
 
 .monuments__list {
@@ -38,13 +51,24 @@
 
 .monuments__listItem {
     font-family: Open Sans Regular;
-    color: var(--primaryTextColor);
+    font-size: 13px;
+    line-height: 1.38;
     list-style: disc;
     margin-bottom: 10px;
+
+    @include mq(tab) {
+        font-size: 18px;
+    }
 }
 
 .monuments__listSpan {
-    font-weight: 600;
+    font-family: Open Sans Medium;
+    font-size: 18px;
+    line-height: 1.38;
+    
+    @include mq(tab) {
+        font-size: 25px;
+    }
 }
 
 .monuments__pictureList {
@@ -63,7 +87,13 @@
 .monumentsPictureList__description {
     font-family: Open Sans Regular;
     font-size: 15px;
+    line-height: 1.38;
     text-align: inherit;
-    color: var(--primaryTextColor);
     text-align: center;
+    color: var(--primaryTextColor);
+
+    @include mq(tab) {
+            font-family: Open Sans SemiBold;
+            font-size: 20px;
+        }
 }
