@@ -1,5 +1,8 @@
+@import '../../sass/utils/mixin';
+
 .sectionCrosses {
     background-color: var(--backgroundColor);
+    color: var(--primaryTextColor);
     padding-top: 70px;
 }
 
@@ -10,25 +13,34 @@
 .crossesDescriptionContainer {
     padding: 10px;
     outline: 1px solid var(--primaryTextColor);
+
+    @include mq(tab) {
+        padding: 20px;
+    }
 }
 
 .crosses__title {
-    text-align: center;
     font-family: Open Sans SemiBold;
     font-size: 20px;
-    font-weight: 600;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: var(--primaryTextColor);
+    line-height: 1.38;
+    text-align: center;
+    margin-bottom: 20px;
 
+    @include mq(tab) {
+        font-size: 25px;
+    }
 }
 
 .crosses__description {
     font-family: Open Sans Regular;
     font-size: 15px;
+    line-height: 1.38;
     text-align: inherit;
-    color: var(--primaryTextColor);
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    @include mq(tab) {
+        font-size: 18px;
+    }
 }
 
 .crosses__list {
@@ -38,33 +50,57 @@
 
 .crosses__listItem {
     font-family: Open Sans Regular;
-    color: var(--primaryTextColor);
+    font-size: 13px;
+    line-height: 1.38;
     list-style: disc;
     margin-bottom: 10px;
+    
+    @include mq(tab) {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
 }
 
 .crosses__listSpan {
-    font-weight: 600;
+    font-family: Open Sans Medium;
+    font-size: 18px;
+    line-height: 1.38;
+    
+    @include mq(tab) {
+        font-size: 25px;
+    }
 }
 
 .crosses__pictureList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+    justify-items: center;
+    margin-bottom: 20px;
 
+    @include mq(tab) {
+        grid-gap: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 .crossesPictureList_img {
     width: 125px;
     height: 190px;
-    padding-bottom: 10px;
+
+    @include mq(tab) {
+        width: 330px;
+        height: 450px;
+    }  
 }
 
 .crossesPictureList__description {
     font-family: Open Sans Regular;
     font-size: 15px;
-    text-align: inherit;
-    color: var(--primaryTextColor);
-    text-align: center;
+    line-height: 1.38;
+    
+    @include mq(tab) {
+        font-size: 18px;
+    }
 }
 

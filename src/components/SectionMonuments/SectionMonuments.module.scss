@@ -24,7 +24,7 @@
     font-size: 20px;
     line-height: 1.38;
     text-align: center;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 
     @include mq(tab) {
         font-size: 25px;
@@ -37,7 +37,7 @@
     font-size: 13px;
     line-height: 1.38;
     text-align: inherit;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 
     @include mq(tab) {
             font-size: 18px;
@@ -58,6 +58,7 @@
 
     @include mq(tab) {
         font-size: 18px;
+        margin-bottom: 20px;
     }
 }
 
@@ -81,16 +82,13 @@
 .monumentsPictureList_img {
     width: 125px;
     height: 190px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .monumentsPictureList__description {
     font-family: Open Sans Regular;
     font-size: 15px;
     line-height: 1.38;
-    text-align: inherit;
-    text-align: center;
-    color: var(--primaryTextColor);
 
     @include mq(tab) {
             font-family: Open Sans SemiBold;
