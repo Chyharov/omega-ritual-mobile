@@ -48,7 +48,23 @@ const SectionServicesList = () => {
               </div>
             </Link>
           </li>
+
+          <li className={s.ritualServices__listItem}>
+            <Link className={s.ritualServices__link} to="/vases">
+              <div className={s.ritualServices__border}>
+                <h2 className={s.ritualServices__title}>Поховальні вази</h2>
+              </div>
+            </Link>
+          </li>
                       
+          <li className={s.ritualServices__listItem}>
+            <Link className={s.ritualServices__link} to="/decorations">
+              <div className={s.ritualServices__border}>
+                <h2 className={s.ritualServices__title}>Декор</h2>
+              </div>
+            </Link>
+          </li>  
+
           <li className={s.ritualServices__listItem}>
             <Link className={s.ritualServices__link} to="/otherattributes">
               <div className={s.ritualServices__border}>

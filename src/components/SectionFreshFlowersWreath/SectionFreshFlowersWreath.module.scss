@@ -19,7 +19,7 @@
     font-family: Open Sans SemiBold;
     font-size: 20px;
     line-height: 1.38;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     color: var(--primaryTextColor);
 
     @include mq(tab) {
@@ -34,7 +34,7 @@
     line-height: 1.38;
     text-align: inherit;
     color: var(--primaryTextColor);
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 
     @include mq(tab) {
         font-size: 18px;
@@ -42,7 +42,7 @@
 }
 
 .freshFlowersWreath__list {
-    padding-left: 20px;
+    margin-left: 20px;
     margin-bottom: 20px;
 }
 

@@ -23,7 +23,7 @@
     font-family: Open Sans SemiBold;
     font-size: 20px;
     line-height: 1.38;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     color: var(--primaryTextColor);
 
     @include mq(tab) {
@@ -36,7 +36,7 @@
     font-size: 13px;
     line-height: 1.38;
     color: var(--primaryTextColor);
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 
     @include mq(tab) {
         font-size: 18px;
@@ -44,7 +44,7 @@
 }
 
 .artificialWreath__list {
-    padding-left: 20px;
+    margin-left: 20px;
     margin-bottom: 20px;
 }
 
@@ -89,7 +89,7 @@
 .artificialWreathPictureList_img {
     width: 125px;
     height: 190px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 
     @include mq(tab) {
         width: 320px;
@@ -102,6 +102,7 @@
     font-size: 13px;
     color: var(--primaryTextColor);
     text-align: center;
+    margin-bottom: 10px;
 
     @include mq(tab) {
     font-size: 18px;

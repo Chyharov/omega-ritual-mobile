@@ -8,6 +8,8 @@ import CoveredPage from 'pages/CoveredPage/CoveredPage';
 import OtherAttributesPage from 'pages/OtherAttributesPage/OtherAttributesPage';
 import ArtificialWreathsPage from 'pages/ArtificialWreathsPage/ArtificialWreathsPage';
 import FreshFlowersWreathPage from 'pages/FreshFlowersWreathPage/FreshFlowersWreathPage';
+import FuneralVasesPage from 'pages/FuneralVasesPage/FuneralVasesPage';
+import DecorationsPage from 'pages/DecorationsPage/DecorationsPage';
 
 
 export const App = () => {
@@ -22,7 +24,9 @@ export const App = () => {
         <Route path="/covered" element={<CoveredPage />} />
         <Route path="/otherattributes" element={<OtherAttributesPage />} />
         <Route path="/artificialwreaths" element={<ArtificialWreathsPage />} />
-        <Route path="/freshflowerswreath" element={<FreshFlowersWreathPage/>} />
+        <Route path="/freshflowerswreath" element={<FreshFlowersWreathPage />} />
+        <Route path="/vases" element={<FuneralVasesPage />} />
+        <Route path="/decorations" element={<DecorationsPage/>} />
       </Routes>
     </>
     
