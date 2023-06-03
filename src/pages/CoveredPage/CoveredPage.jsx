@@ -4,7 +4,9 @@ const CoveredPage = () => {
   return (
     <>
       <MainHeader />
-      <h1>Its Covered Page</h1>
+      <main>
+        <h1>Its Covered Page</h1>
+      </main>
     </>
   );
 };

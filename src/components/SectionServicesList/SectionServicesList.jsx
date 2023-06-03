@@ -4,7 +4,7 @@ import s from '../SectionServicesList/SectionServicesList.module.scss';
 
 const SectionServicesList = () => {
   return (
-    <section className={s.SectionServicesList} id='servicesList'>
+    <section className={s.sectionServicesList} id='servicesList'>
       <div className={'container ' + s.ritualServices__container}>
 
         <ul className={s.ritualServices__list}>

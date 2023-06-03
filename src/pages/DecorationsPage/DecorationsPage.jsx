@@ -5,7 +5,10 @@ const DecorationsPage = () => {
   return (
     <>
       <MainHeader />
-      <Decorations />
+      <main>
+        <Decorations />
+      </main>
+
     </>
   );
 };

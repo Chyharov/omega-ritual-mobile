@@ -1,6 +1,6 @@
 @import '../../sass/utils/mixin';
 
-.sectionServicesList {
+.sectionOtherAttributes {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,12 +8,11 @@
     color: var(--primaryTextColor);
     background-color: var(--backgroundColor);
     outline: 1px solid var(--primaryTextColor);
+    height: 100vh;
 
-    @include mq(tab) {
-    }
+    @include mq(tab) {}
 
-    @include mq(desk) {
-    }
+    @include mq(desk) {}
 }
 
 .ritualServices__container {
@@ -39,8 +38,7 @@
         font-size: 25px;
     }
 
-    @include mq(desk) {
-    }
+    @include mq(desk) {}
 }
 
 .ritualServices__border {
@@ -69,5 +67,3 @@
     align-items: center;
     justify-content: flex-end;
 }
-
-

@@ -5,7 +5,10 @@ const FuneralVasesPage = () => {
   return (
     <>
       <MainHeader />
-      <FuneralVases />
+      <main>
+        <FuneralVases />
+      </main>
+
     </>
   );
 };

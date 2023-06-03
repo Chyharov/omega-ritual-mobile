@@ -1,10 +1,13 @@
 import MainHeader from '../../components/MainHeader/MainHeader'
+import OtherAttributes from 'components/OtherAttributes/OtherAttributes';
 
 const OtherAttributesPage = () => {
   return (
     <>
       <MainHeader />
-      <h1>Its Other attributes Page</h1>
+      <main>
+        <OtherAttributes />
+      </main>
     </>
   );
 };

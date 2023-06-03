@@ -10,6 +10,8 @@ import ArtificialWreathsPage from 'pages/ArtificialWreathsPage/ArtificialWreaths
 import FreshFlowersWreathPage from 'pages/FreshFlowersWreathPage/FreshFlowersWreathPage';
 import FuneralVasesPage from 'pages/FuneralVasesPage/FuneralVasesPage';
 import DecorationsPage from 'pages/DecorationsPage/DecorationsPage';
+import FuneralPortraitPage from 'pages/FuneralPortraitPage/FuneralPortraitPage';
+import FuneralSetPage from 'pages/FuneralSetPage/FuneralSetPage';
 
 
 export const App = () => {
@@ -26,7 +28,9 @@ export const App = () => {
         <Route path="/artificialwreaths" element={<ArtificialWreathsPage />} />
         <Route path="/freshflowerswreath" element={<FreshFlowersWreathPage />} />
         <Route path="/vases" element={<FuneralVasesPage />} />
-        <Route path="/decorations" element={<DecorationsPage/>} />
+        <Route path="/decorations" element={<DecorationsPage />} />
+        <Route path="/funeralportrait" element={<FuneralPortraitPage />} />
+        <Route path="/funeralset" element={<FuneralSetPage/>} />
       </Routes>
     </>
     
