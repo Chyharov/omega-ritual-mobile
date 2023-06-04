@@ -6,7 +6,6 @@
     line-height: 1.38;
     text-align: center;
     margin-bottom: 20px;
-    color: var(--primaryTextColor);
 
     @include mq(tab) {
     font-size: 25px;
@@ -30,7 +29,6 @@
     line-height: 1.38;
     margin-top: 20px;
     text-align: center;
-    color: var(--primaryTextColor);
 
     @include mq(tab) {
         font-size: 20px;
@@ -41,7 +39,6 @@
     font-family: Open Sans Regular;
     font-size: 13px;
     line-height: 1.38;
-    color: var(--primaryTextColor);
     margin-bottom: 20px;
 
     @include mq(tab) {
@@ -51,13 +48,11 @@
 
 .wreathsContainer {
     padding: 20px;
-    background-color: var(--backgroundColor);
 }
 
 .wreathsdDescriptionContainer {
     padding: 20px;
     outline: 1px solid var(--primaryTextColor);
-    background-color: var(--backgroundColor);
 
     @include mq(tab) {
         padding: 30px 20px 20px 20px;
@@ -65,7 +60,6 @@
 }
 
 .wreathsPage__listItem {
-    color: var(--primaryTextColor);
     list-style: disc;
     margin-bottom: 10px;
 }
@@ -87,7 +81,6 @@
 }
 
 .sectionWreaths {
-    background-color: var(--backgroundColor);
     padding-top: 70px;
 }
 
@@ -111,6 +104,7 @@
     padding: 10px;
     width: 110px;
     outline: 1px solid var(--primaryTextColor);
+    border-radius: 8px;
 
     @include mq(tab) {
         padding: 20px;

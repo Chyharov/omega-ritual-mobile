@@ -3,12 +3,12 @@ import { MdOutlineArrowBackIos } from 'react-icons/md';
 import s from '../MainHeader/MainHeader.module.scss';
 import Logo from '../Logo/Logo';
 
-const MainHeader = () => {
+const OtherAttribucialHeader = () => {
   return (
     <header className={s.header}>
       <div className={`container ${s.header__container}`}>
         <Logo />
-        <Link className={s.header__linkBack} to="/">
+        <Link className={s.header__linkBack} to="/otherattributes">
           <MdOutlineArrowBackIos />Назад
         </Link>
       </div>
@@ -16,4 +16,4 @@ const MainHeader = () => {
   );
 };
 
-export default MainHeader;
+export default OtherAttribucialHeader;

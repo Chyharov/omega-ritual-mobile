@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import ModalWindow from 'components/ModalWindow/ModalWindow';
-import s from './Decorations.module.scss'
+import s from './SectionDecorations.module.scss'
 
-const Decorations = () => {
+const SectionDecorations = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImageSrc, setSelectedImageSrc] = useState('');
   const [selectedImageAlt, setSelectedImageAlt] = useState('');
@@ -39,7 +39,7 @@ const Decorations = () => {
   }, [modalOpen]);
 
     return (
-        <section className={s.decorations}>
+        <section className={s.sectionDecorations}>
             <div className={'container ' + s.decorationsContainer}>
                 <div className={s.decorationsDescriptionContainer}>
                     <h2 className={s.decorations__title}>Декор</h2>
@@ -64,4 +64,4 @@ const Decorations = () => {
     );
   };
 
-export default Decorations;
+export default SectionDecorations;

@@ -4,17 +4,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 120px 0px 30px;
-  color: var(--primaryTextColor);
-  background-color: var(--backgroundColor);
+  padding-top: 120px;
+  margin-bottom: 30px;
+
 
   @include mq(tab) {
-    padding: 160px 0px 30px;
+    padding-top: 160px;
   }
 
   @include mq(desk) {
-    color: var(--primaryTextColor);
-    background-color: var(--backgroundColor);
   }
 }
 

@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
     width: 280px;
+    margin-top: 10px;
     }
 
     @include mq(tab) {
@@ -28,6 +29,10 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  @include mq(mob-only) {
+      margin: 10px;
+    }
+  
 }
 
 .menu__list_item:not(:last-child) {

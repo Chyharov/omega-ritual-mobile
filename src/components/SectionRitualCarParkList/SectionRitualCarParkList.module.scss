@@ -4,19 +4,7 @@
   display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--primaryTextColor);
-    background-color: var(--backgroundColor);
     flex-direction: column;
-
-  @include mq(tab) {
-    color: var(--primaryTextColor);
-    background-color: var(--backgroundColor);
-  }
-
-  @include mq(desk) {
-    color: var(--primaryTextColor);
-    background-color: var(--backgroundColor);
-  }
 }
 
 .ritualCarPark__container {

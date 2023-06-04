@@ -1,12 +1,12 @@
 import MainHeader from '../../components/MainHeader/MainHeader'
-import Decorations from 'components/Decorations/Decorations';
+import SectionDecorations from 'components/SectionDecorations/SectionDecorations';
 
 const DecorationsPage = () => {
   return (
     <>
       <MainHeader />
       <main>
-        <Decorations />
+        <SectionDecorations />
       </main>
 
     </>

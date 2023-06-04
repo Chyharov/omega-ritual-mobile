@@ -1,10 +1,10 @@
-import MainHeader from '../../components/MainHeader/MainHeader'
+import OtherAttribucialHeader from '../../components/OtherAttribucialHeader/OtherAttribucialHeader'
 import SectionFuneralSet from 'components/SectionFuneralSet/SectionFuneralSet';
 
 const FuneralSetPage = () => {
   return (
     <>
-      <MainHeader />
+      <OtherAttribucialHeader />
       <main>
         <SectionFuneralSet />
       </main>
