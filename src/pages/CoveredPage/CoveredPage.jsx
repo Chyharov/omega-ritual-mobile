@@ -1,11 +1,12 @@
 import MainHeader from '../../components/MainHeader/MainHeader'
+import SectionCoverd from 'components/SectionCovered/SectionCovered';
 
 const CoveredPage = () => {
   return (
     <>
       <MainHeader />
       <main>
-        <h1>Its Covered Page</h1>
+        <SectionCoverd />
       </main>
     </>
   );
