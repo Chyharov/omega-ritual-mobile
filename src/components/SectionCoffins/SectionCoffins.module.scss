@@ -104,27 +104,6 @@
     }
 }
 
-.coffinsPictureList__description {
-    font-family: Open Sans Regular;
-    font-size: 13px;
-    line-height: 1.38;
-    text-align: center;
-
-    @include mq(tab) {
-        font-size: 18px;
-    }
-}
-
-.coffins__descriptionlast {
-    font-family: Open Sans Regular;
-    font-size: 13px;
-    line-height: 1.38;
-
-    @include mq(tab) {
-        font-size: 18px;
-    }
-}
-
 .modal {
     position: fixed;
     top: 0;

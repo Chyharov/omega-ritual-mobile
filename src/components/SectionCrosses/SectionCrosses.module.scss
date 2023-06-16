@@ -17,56 +17,9 @@
     }
 }
 
-.crosses__title {
-    font-family: Open Sans SemiBold;
-    font-size: 20px;
-    line-height: 1.38;
-    text-align: center;
-    margin-bottom: 20px;
-
-    @include mq(tab) {
-        font-size: 25px;
-    }
-}
-
-.crosses__description {
-    font-family: Open Sans Regular;
-    font-size: 15px;
-    line-height: 1.38;
-    text-align: inherit;
-    margin-bottom: 20px;
-
-    @include mq(tab) {
-        font-size: 18px;
-    }
-}
-
 .crosses__list {
     padding-left: 20px;
     margin-bottom: 20px;
-}
-
-.crosses__listItem {
-    font-family: Open Sans Regular;
-    font-size: 13px;
-    line-height: 1.38;
-    list-style: disc;
-    margin-bottom: 10px;
-    
-    @include mq(tab) {
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
-}
-
-.crosses__listSpan {
-    font-family: Open Sans Medium;
-    font-size: 18px;
-    line-height: 1.38;
-    
-    @include mq(tab) {
-        font-size: 25px;
-    }
 }
 
 .crosses__pictureList {
@@ -90,15 +43,5 @@
         width: 330px;
         height: 450px;
     }  
-}
-
-.crossesPictureList__description {
-    font-family: Open Sans Regular;
-    font-size: 15px;
-    line-height: 1.38;
-    
-    @include mq(tab) {
-        font-size: 18px;
-    }
 }
 

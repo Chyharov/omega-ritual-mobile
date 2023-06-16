@@ -1,16 +1,5 @@
 @import '../../sass/utils/mixin';
 
-.wreathsPageTitle {
-    font-family: Open Sans SemiBold;
-    font-size: 20px;
-    line-height: 1.38;
-    text-align: center;
-    margin-bottom: 20px;
-
-    @include mq(tab) {
-    font-size: 25px;
-    }
-}
 
 .freshFlowers {
     margin: 0 auto;
@@ -20,29 +9,6 @@
     @include mq(tab) {
         width: 200px;
         height: 200px;
-    }
-}
-
-.wreathsLinksTitle {
-    font-family: Open Sans SemiBold;
-    font-size: 15px;
-    line-height: 1.38;
-    margin-top: 20px;
-    text-align: center;
-
-    @include mq(tab) {
-        font-size: 20px;
-    }
-}
-
-.wreathsPageDescription {
-    font-family: Open Sans Regular;
-    font-size: 13px;
-    line-height: 1.38;
-    margin-bottom: 20px;
-
-    @include mq(tab) {
-    font-size: 18px;
     }
 }
 
@@ -64,16 +30,6 @@
     margin-bottom: 10px;
 }
 
-.wreathsPage__listItemDescription {
-    font-family: Open Sans Regular;
-    font-size: 13px;
-    line-height: 1.38;
-
-    @include mq(tab) {
-        font-size: 18px;
-    }
-}
-
 .wreathsPage__list {
     list-style: disc;
     margin-left: 20px;
@@ -82,10 +38,6 @@
 
 .sectionWreaths {
     padding-top: 70px;
-}
-
-.wreathsPageDescriptionOmega {
-    font-weight: 600;
 }
 
 .wreathsLinksContainer {

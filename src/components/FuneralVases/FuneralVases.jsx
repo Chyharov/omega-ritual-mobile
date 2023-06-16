@@ -45,7 +45,7 @@ const FuneralVases = () => {
         <section className={s.funeralVases}>
             <div className={'container ' + s.funeralVasesContainer}>
                 <div className={s.funeralVasesDescriptionContainer}>
-                    <h2 className={s.funeralVases__title}>Похавальні вази</h2>
+                    <h2 className="title">Похавальні вази</h2>
                         <ul className={s.funeralVasesPictureList}>
                         {funeralVasesPictureList.map((image) => (
                         <li className={s.funeralVasesPictureList__item} key={image.id}>

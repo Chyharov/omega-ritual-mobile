@@ -40,21 +40,6 @@
   }
 }
 
-.about__description {
-  text-align: center;
-  font-family: Open Sans Regular;
-  line-height: 1.38;
-  font-size: 13px;
-  margin-bottom: 20px;
-
-  @include mq(tab) {
-    font-size: 18px;
-  }
-
-  @include mq(desk) {
-  }
-}
-
 .about__logo {
   width: 100px;
   height: 100px;
@@ -67,10 +52,6 @@
 
   @include mq(desk) {
   }
-}
-
-.about__address {
-  text-align: center;
 }
 
 .about__company {

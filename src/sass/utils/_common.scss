@@ -29,17 +29,8 @@ button {
   cursor: pointer;
 }
 
-.section {
-  padding-top: 20px;
-  padding-bottom: 40px;
-
-  @include mq(desk) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
 main {
   color: var(--primaryTextColor);
   background-color: var(--backgroundColor);
 }
+

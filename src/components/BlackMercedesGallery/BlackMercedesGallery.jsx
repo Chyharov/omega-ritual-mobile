@@ -87,7 +87,7 @@ const BlackMercedesGallery = () => {
     return (
         <>
           <li className={s.ritualCarParkList}>
-            <p className={s.ritualCarParkList__item}>VIP</p>
+            <h2 className="title">VIP</h2>
               <CarouselProvider
                 naturalSlideWidth={280}
                 naturalSlideHeight={130}
@@ -107,7 +107,7 @@ const BlackMercedesGallery = () => {
                   </Slider>
 
                   <p className={s.ritualCarParkList__name}>Mercedes Banz Sprinter Чорний</p>
-                  <p className={s.ritualCarParkList__description}>(14 - 18 пасажирів)</p>
+                  <p className="description">(14 - 18 пасажирів)</p>
 
                   <div className={s.carouselButtonCenter}>
                     <ButtonBack className={s.carouselButton}>Назад</ButtonBack>

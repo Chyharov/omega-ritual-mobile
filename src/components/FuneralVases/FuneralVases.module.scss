@@ -13,31 +13,6 @@
     outline: 1px solid var(--primaryTextColor);
 }
 
-.funeralVases__title {
-    text-align: center;
-    font-family: Open Sans SemiBold;
-    font-size: 20px;
-    line-height: 1.38;
-    margin-bottom: 20px;
-
-    @include mq(tab) {
-        font-size: 25px;
-    }
-
-}
-
-.funeralVases__description {
-    font-family: Open Sans Regular;
-    font-size: 13px;
-    line-height: 1.38;
-    text-align: inherit;
-    margin-bottom: 20px;
-
-    @include mq(tab) {
-        font-size: 18px;
-    }
-}
-
 .funeralVases__list {
     margin-left: 20px;
     margin-bottom: 20px;
@@ -47,16 +22,6 @@
     font-family: Open Sans Regular;
     list-style: disc;
     margin-bottom: 10px;
-}
-
-.funeralVases__listSpan {
-    font-family: Open Sans Medium;
-    font-size: 18px;
-    line-height: 1.38;
-
-    @include mq(tab) {
-        font-size: 25px;
-    }
 }
 
 .funeralVasesPictureList {
@@ -70,21 +35,11 @@
     }
 }
 
-.funeralVases__listItemDescription {
-    font-family: Open Sans Regular;
-    font-size: 13px;
-    line-height: 1.38;
-
-    @include mq(tab) {
-        font-size: 18px;
-    }
-}
-
 .funeralVasesPictureList_img {
     width: 125px;
 
     @include mq(tab) {
-        width: 320px;
-        height: 320px;
+        width: 350px;
+        height: 350px;
     }
 }

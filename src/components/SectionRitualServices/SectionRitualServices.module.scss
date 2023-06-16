@@ -18,29 +18,3 @@
   }
 }
 
-.ritualServices__title {
-  font-family: Open Sans SemiBold;
-  font-size: 20px;
-  line-height: 1.38;
-  text-align: center;
-  margin-bottom: 20px;
-
-  @include mq(tab) {
-    font-size: 25px;
-  }
-
-  @include mq(desk) {
-  }
-}
-
-.ritualServices__description {
-  font-family: Open Sans Regular;
-  font-size: 13px;
-  line-height: 1.38;
-  margin-bottom: 20px;
-
-  @include mq(tab) {
-    font-size: 18px;
-  }
-}
-

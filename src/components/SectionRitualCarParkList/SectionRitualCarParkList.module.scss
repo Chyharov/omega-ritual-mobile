@@ -17,29 +17,6 @@
   }
 }
 
-.ritualCarPark__title {
-  font-family: Open Sans SemiBold;
-  font-size: 20px;
-  line-height: 1.38;
-  margin-bottom: 20px;
-  text-align: center;
-
-  @include mq(tab) {
-    font-size: 25px;
-  }
-
-  @include mq(desk) {
-    max-width: 1250px;
-  }
-}
-
-.ritualCarPark__description {
-  font-family: Open Sans Regular;
-    font-size: 13px;
-    line-height: 1.38;
-    margin-bottom: 20px;
-}
-
 .ritualCarParkList {
   padding: 30px 0px;
   margin-bottom: 30px;

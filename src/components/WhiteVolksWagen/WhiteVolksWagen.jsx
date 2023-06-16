@@ -83,7 +83,7 @@ const WhiteVolksWagen = () => {
     return (
         <>
             <li className={s.ritualCarParkList}>
-                <p className={s.ritualCarParkList__item}>Економ клас</p>
+                <h2 className="title">Економ клас</h2>
                 
                     <CarouselProvider
                     naturalSlideWidth={280}
@@ -100,7 +100,7 @@ const WhiteVolksWagen = () => {
                         </Slider>
 
                 <p className={s.ritualCarParkList__name}>Volkswagen Т-5 Білий</p>
-                <p className={s.ritualCarParkList__description}>(2 - 5 пасажирів)</p>
+                <p className="description">(2 - 5 пасажирів)</p>
 
                 <div className={s.carouselButtonCenter}>
                     <ButtonBack className={s.carouselButton}>Назад</ButtonBack>

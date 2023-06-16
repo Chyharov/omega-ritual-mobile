@@ -58,7 +58,7 @@ const SectionCoverd = () => {
       <section className={s.sectionDecorations}>
             <div className={'container ' + s.decorationsContainer}>
                 <div className={s.decorationsDescriptionContainer}>
-                    <h2 className={s.decorations__title}>Покривала</h2>
+                    <h2 className="title">Покривала</h2>
                         <ul className={s.decorationsPictureList}>
                         {decorationsPictureList.map((image) => (
                         <li className={s.decorationsPictureList__item} key={image.id}>

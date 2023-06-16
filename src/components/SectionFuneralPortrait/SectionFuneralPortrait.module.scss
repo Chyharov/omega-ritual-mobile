@@ -13,31 +13,6 @@
     outline: 1px solid var(--primaryTextColor);
 }
 
-.funeralPortrait__title {
-    text-align: center;
-    font-family: Open Sans SemiBold;
-    font-size: 20px;
-    line-height: 1.38;
-    margin-bottom: 20px;
-
-    @include mq(tab) {
-        font-size: 25px;
-    }
-
-}
-
-.funeralPortrait__description {
-    font-family: Open Sans Regular;
-    font-size: 13px;
-    line-height: 1.38;
-    text-align: inherit;
-    margin-bottom: 20px;
-
-    @include mq(tab) {
-        font-size: 18px;
-    }
-}
-
 .funeralPortrait__list {
     margin-left: 20px;
     margin-bottom: 20px;
@@ -53,16 +28,6 @@
     }
 }
 
-.funeralPortrait__listSpan {
-    font-family: Open Sans Medium;
-    font-size: 18px;
-    line-height: 1.38;
-
-    @include mq(tab) {
-        font-size: 25px;
-    }
-}
-
 .funeralPortraitPictureList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -71,16 +36,6 @@
 
     @include mq(tab) {
         grid-gap: 20px;
-    }
-}
-
-.funeralPortrait__listItemDescription {
-    font-family: Open Sans Regular;
-    font-size: 13px;
-    line-height: 1.38;
-
-    @include mq(tab) {
-        font-size: 18px;
     }
 }
 
