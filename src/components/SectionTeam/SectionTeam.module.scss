@@ -39,6 +39,8 @@
   }
 
   @include mq(desk) {
+    padding: 30px 20px;
+    width: 1300px;
   }
 
   &:not(:last-child) {
@@ -57,6 +59,10 @@
   @include mq(tab) {
     font-size: 30px;
   }
+
+  @include mq(desk) {
+    font-size: 35px;
+  }
 }
 
 .memberCard__position {
@@ -67,5 +73,9 @@
 
   @include mq(tab) {
     font-size: 20px;
+  }
+
+  @include mq(desk) {
+    font-size: 30px;
   }
 }

@@ -12,5 +12,6 @@
   }
 
   @include mq(desk) {
+    height: 70px;
   }
 }

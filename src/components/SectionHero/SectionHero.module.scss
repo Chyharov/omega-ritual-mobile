@@ -13,6 +13,7 @@
   }
 
   @include mq(desk) {
+    padding-top: 200px;
   }
 }
 
@@ -38,9 +39,11 @@
   }
 
   @include mq(tab) {
-    font-family: Open Sans Regular;
     font-size: 18px;
-    line-height: 1.38;
     width: 700px;
+  }
+
+  @include mq(desk) {
+    font-size: 22px;
   }
 }

@@ -6,8 +6,8 @@ const SectionAbout = () => {
     <section className={s.about} id='about'>
       <div className="container">
         <div className={s.about__container}>
-          <svg className={s.about__logo} width="100" height="100">
-            <image xlinkHref={logo} alt="Logo"/>
+          <svg className={s.about__logo}>
+            <image className={s.image__logo} xlinkHref={logo} alt="Logo"/>
           </svg>
           <h1 className="title">ОМЕГА-РИТУАЛ</h1>
           <p className="description">похоронний дім</p>

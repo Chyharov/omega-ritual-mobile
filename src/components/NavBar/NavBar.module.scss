@@ -23,6 +23,10 @@
 .menu__list_link {
   color: #fff;
   font-size: 1.1rem;
+
+  @include mq(desk) {
+    font-size: 1.5rem;
+  }
 }
 
 .menu__list_item {

@@ -21,6 +21,10 @@
   width: 700px;
   padding: 30px 10px;
   }
+
+  @include mq(desk) {
+    width: 1300px;
+  }
 }
 
 .about__title {
@@ -51,6 +55,8 @@
   }
 
   @include mq(desk) {
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -68,6 +74,18 @@
   }
 
   @include mq(desk) {
+    font-size: 22px;
+    width: 1000px;
+  }
+}
+
+.image__logo {
+  width: 100px;
+  height: 100px;
+
+  @include mq(desk) {
+    width: 150px;
+    height: 150px;
   }
 }
 
