@@ -12,7 +12,7 @@ organization, order the departure of an agent, select the appropriate service.
 To run this application on a local computer, you should clone the
 repository and install all necessary dependencies using the following commands:
 
-## bash
+## Bash
 
 git clone https://github.com/Chyharov/omega-ritual-mobile
 
