@@ -20,6 +20,8 @@ cd pizza-style-test-task
 
 npm install
 
+npm run start
+
 ## Usage 
 
 To run the application in the local environment, you should run the
