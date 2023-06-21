@@ -14,6 +14,10 @@
   margin-right: auto;
 
   @include mq(tab) {
-      width: 700px;
-    }
+    width: 700px;
+  }
+
+  @include mq(desk) {
+    width: 1000px;
+  }
 }

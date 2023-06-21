@@ -38,7 +38,12 @@
     width: 125px;
 
     @include mq(tab) {
-            width: 320px;
-            height: 500px;
-        }
+        width: 320px;
+        height: 500px;
+    }
+
+    @include mq(desk) {
+        width: 630px;
+        height: 820px;
+    }
 }

@@ -101,7 +101,7 @@ const SectionArtificialWreath = () => {
                     {ArtificialWreathsPictureList.map((image) => (
                     <li className={s.artificialWreath__pictureListItem} key={image.id}>
                         <img className={s.artificialWreathPictureList_img} src={image.src} alt={image.alt} onClick={() => openModal(image.src, image.alt, image.title)}/>
-                        <p className={s.artificialWreathPictureList__description}>{image.title}</p>
+                        <h2 className="title">{image.title}</h2>
                     </li>
                     ))}
                 </ul>

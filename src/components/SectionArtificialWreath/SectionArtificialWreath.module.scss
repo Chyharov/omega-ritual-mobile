@@ -23,10 +23,7 @@
 }
 
 .artificialWreath__listItem {
-    font-family: Open Sans Regular;
-    color: var(--primaryTextColor);
     list-style: disc;
-    margin-bottom: 10px;
 }
 
 .artificialWreath__pictureList {
@@ -49,16 +46,9 @@
         width: 320px;
         height: 500px;
     }
-}
 
-.artificialWreathPictureList__description {
-    font-family: Open Sans Regular;
-    font-size: 13px;
-    color: var(--primaryTextColor);
-    text-align: center;
-    margin-bottom: 10px;
-
-    @include mq(tab) {
-    font-size: 18px;
+    @include mq(desk) {
+        width: 630px;
+        height: 820px;
     }
 }

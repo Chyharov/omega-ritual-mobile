@@ -21,7 +21,7 @@
     outline: 1px solid var(--primaryTextColor);
 
     @include mq(tab) {
-        padding: 30px 20px 20px 20px;
+        padding: 80px 20px 20px 20px;
     }
 }
 
@@ -50,6 +50,10 @@
         justify-content: space-around;
         margin-bottom: 20px;
     }
+
+    @include mq(desk) {
+        justify-content: space-evenly;
+    }
 }
 
 .wreathsLinks {
@@ -63,4 +67,8 @@
         width: 300px;
     }
 
+    @include mq(desk) {
+        padding: 40px 20px;
+        width: 500px;
+    }
 }

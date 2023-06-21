@@ -49,6 +49,10 @@
     @include mq(tab) {
         width: 700px;
     }
+
+    @include mq(desk) {
+        width: 1000px;
+    }
 }
 
 .ritualServices__border:hover {
