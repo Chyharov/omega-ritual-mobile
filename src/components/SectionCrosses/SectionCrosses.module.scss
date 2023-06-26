@@ -43,5 +43,10 @@
         width: 330px;
         height: 450px;
     }  
+
+    @include mq(desk) {
+        width: 620px;
+        height: 700px;
+    }
 }
 
