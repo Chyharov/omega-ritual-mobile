@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import ModalWindow from 'components/ModalWindow/ModalWindow';
-import s from './FuneralVases.module.scss'
+import s from './SectionFuneralVases.module.scss'
 
-const FuneralVases = () => {
+const SectionFuneralVases = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImageSrc, setSelectedImageSrc] = useState('');
   const [selectedImageAlt, setSelectedImageAlt] = useState('');
@@ -67,4 +67,4 @@ const FuneralVases = () => {
     );
   };
 
-export default FuneralVases;
+export default SectionFuneralVases;

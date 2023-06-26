@@ -1,12 +1,12 @@
 import MainHeader from '../../components/MainHeader/MainHeader'
-import FuneralVases from 'components/FuneralVases/FuneralVases';
+import SectionFuneralVases from 'components/SectionFuneralVases/SectionFuneralVases';
 
 const FuneralVasesPage = () => {
   return (
     <>
       <MainHeader />
       <main>
-        <FuneralVases />
+        <SectionFuneralVases />
       </main>
 
     </>
