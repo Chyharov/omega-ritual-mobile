@@ -5,7 +5,7 @@
 }
 
 .funeralVasesContainer {
-    padding: 20px;
+    padding: 40px 20px 20px 20px;
 }
 
 .funeralVasesDescriptionContainer {
@@ -90,5 +90,10 @@
     @include mq(tab) {
         width: 340px;
         height: 400px;
+    }
+
+    @include mq(desk) {
+        width: 620px;
+        height: 830px;
     }
 }
