@@ -93,6 +93,11 @@
         width: 330px;
         height: 220px;
     }
+
+    @include mq(desk) {
+        width: 620px;
+        height: 400px;
+    }
 }
 
 .coffinsPictureEconomPriceList__img {
@@ -101,6 +106,11 @@
     @include mq(tab) {
         width: 330px;
         height: 500px;
+    }
+
+    @include mq(desk) {
+        width: 620px;
+        height: 800px;
     }
 }
 

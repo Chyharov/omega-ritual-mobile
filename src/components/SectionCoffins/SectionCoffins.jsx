@@ -141,7 +141,7 @@ const SectionCoffins = () => {
                 <p className="descriptionDefault">Кожна така труна робиться майстрами кілька днів, через що її вартість виходить порівняно високою. При цьому ми не женемося за надприбутком і пропонуємо чесні ціни, які повністю відображають всю повноту копіткої багатоденної праці майстрів і елітних матеріалів, що використовуються.</p>
 
                 <h2 className="title">Елітні труни</h2>
-                <p className="descriptionDefault">Матеріал: дерев’яна заготовка покрита лаком</p>
+                <p className="descriptionDefault"><b>Матеріал:</b> дерев’яна заготовка покрита лаком</p>
                     
                 <ul className={s.coffins__pictureList}>
                     {CoffinsPictureElitePriceList.map((image) => (
