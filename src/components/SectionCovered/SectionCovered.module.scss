@@ -5,7 +5,7 @@
 }
 
 .decorationsContainer {
-    padding: 20px;
+    padding: 40px 20px 20px 20px;
 }
 
 .decorationsDescriptionContainer {
@@ -36,5 +36,10 @@
     @include mq(tab) {
         width: 340px;
         height: 450px;
+    }
+
+    @include mq(desk) {
+        width: 620px;
+        height: 800px;
     }
 }
