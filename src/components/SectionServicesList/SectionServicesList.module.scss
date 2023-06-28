@@ -55,7 +55,8 @@
     }
 }
 
-.ritualServices__border:hover {
+.ritualServices__border:hover,
+.ritualServices__border:focus {
     border: 0.5px solid var(--backgroundColor);
     background-color: var(--primaryTextColor);
     color: var(--backgroundColor);

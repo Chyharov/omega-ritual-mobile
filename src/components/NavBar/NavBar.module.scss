@@ -46,7 +46,8 @@
  
 }
 
-.menu__list_item a:hover {
+.menu__list_item a:hover,
+.menu__list_item a:focus {
     border-bottom: 5px solid var(--primaryTextColor);
     margin-bottom: -5px;
 }

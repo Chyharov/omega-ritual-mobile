@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { AiOutlineClose } from 'react-icons/ai';
+import ModalWindow from 'components/ModalWindow/ModalWindow';
 import s from './SectionCoffins.module.scss'
 
 const SectionCoffins = () => {
@@ -82,12 +82,6 @@ const SectionCoffins = () => {
 
   const closeModal = () => {
     setModalOpen(false);
-  };
-
-  const handleOutsideClick = (event) => {
-    if (event.target === event.currentTarget) {
-      closeModal();
-    }
   };
 
   useEffect(() => {
@@ -176,19 +170,12 @@ const SectionCoffins = () => {
                 </ul>
 
                 {modalOpen && (
-                <div className={s.modal} onClick={handleOutsideClick}>
-                  <div className={s.modalContent}>
-                    <b className={s.closeModal} onClick={closeModal}>
-                      <AiOutlineClose className={s.closeModalIcon} />
-                    </b>
-                    <img
-                      className={s.modalImage}
-                      src={selectedImageSrc}
-                      alt={selectedImageAlt}
-                    />
-                  </div>
-                </div>
-              )}    
+                  <ModalWindow
+                    selectedImageSrc={selectedImageSrc}
+                    selectedImageAlt={selectedImageAlt}
+                    closeModal={closeModal}
+                  />
+                )}  
                 
                 <p className="descriptionDefault">У нашому ритуальному бюро ви можете замовити як елітну, так і недорогу бюджетну труну для самостійної організації похорону. Також у вас є можливість безкоштовно викликати додому у будь-який час доби похоронного агента, який допоможе вам організувати всю жалобну церемонію та підібрати труну відповідно до бюджету та статусу покійного.</p>
             </div>

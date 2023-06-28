@@ -39,13 +39,14 @@
     margin-bottom: 10px;
 }
 
-.closeModal:hover {
-    transform: scale(1.2);
-}
-
 .closeModalIcon {
     width: 30px;
     height: 30px;
+}
+
+.closeModalIcon:hover,
+.closeModalIcon:focus {
+    color: rgb(255, 0, 0);
 }
 
 .modalDescription {
