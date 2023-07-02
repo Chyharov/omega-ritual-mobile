@@ -5,7 +5,11 @@
 }
 
 .coffinsContainer {
+    padding: 20px;
+    @include mq(desk) {
     padding: 40px 20px 20px 20px;
+    }
+
 }
 
 .coffinsDescriptionContainer {

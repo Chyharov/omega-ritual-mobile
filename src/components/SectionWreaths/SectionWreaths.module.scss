@@ -59,12 +59,14 @@
 .wreathsLinks {
     padding: 10px;
     width: 110px;
+    height: 213px;
     outline: 1px solid var(--primaryTextColor);
     border-radius: 8px;
 
     @include mq(tab) {
         padding: 20px;
         width: 300px;
+        height: 330px;
     }
 
     @include mq(desk) {

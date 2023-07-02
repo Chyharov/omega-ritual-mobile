@@ -2,10 +2,15 @@
 
 .sectionDecorations {
     padding-top: 70px;
+    height: 100vh;
 }
 
 .decorationsContainer {
-    padding: 40px 20px 20px 20px;
+    padding: 20px;
+
+    @include mq(desk) {
+        padding: 40px 20px 20px 20px;
+    }
 }
 
 .decorationsDescriptionContainer {
@@ -37,6 +42,7 @@
 
 .decorationsPictureList_img {
     width: 125px;
+    height: 130px;
 
     @include mq(tab) {
         width: 340px;
