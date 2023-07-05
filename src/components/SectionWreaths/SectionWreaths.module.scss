@@ -47,7 +47,7 @@
 .wreathsLinksContainer {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
     @include mq(tab) {
         display: flex;
