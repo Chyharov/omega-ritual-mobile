@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkomega_ritual_mobile=self.webpackChunkomega_ritual_mobile||[]).push([[519],{3519:function(a,e,o){o.d(e,{Z:function(){return _}});var l=o(1087);o(2791);var i=o.p+"static/media/omega-ritual-logo.0259abe9a7624f72a96aaee1faafa651.svg",r="Logo_logo__6yrBi",s="Logo_logo__img__zmYBe",t=o(184),_=function(){return(0,t.jsx)(l.rU,{className:r,to:"/",children:(0,t.jsx)("img",{className:s,loading:"lazy",src:i,alt:"header__logo"})})}}}]);
+//# sourceMappingURL=519.88893499.chunk.js.map
