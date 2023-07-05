@@ -14,14 +14,14 @@ const SectionWreath = () => {
                 <Link className={s.ritualServices__link} to="/freshflowerswreath">
                   <div className={s.wreathsLinks}>
                     <img className={s.freshFlowers} src={freshFlowersWreath} alt="Вінок із живих квітів" />
-                    <h2 className="title">Вінок із живих квітів</h2>
+                    <h2 className={s.wreathsLinks__title}>Вінок із живих квітів</h2>
                   </div>
                 </Link>
 
                 <Link className={s.ritualServices__link} to="/artificialwreaths">
                   <div className={s.wreathsLinks}>
                     <img className={s.freshFlowers} src={artificialWreaths} alt="Вінок із живих квітів" />
-                    <h2 className="title">Вінок із штучних квітів</h2>
+                    <h2 className={s.wreathsLinks__title}>Вінок із штучних квітів</h2>
                   </div>
                 </Link>
 
