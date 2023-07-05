@@ -1,7 +1,10 @@
 @import '../../sass/utils/mixin';
 
 .funeralVases {
-    height: 100vh;
+    @include mq(mob-only) {
+        height: 100vh;
+    }
+
     padding-top: 70px;
 }
 

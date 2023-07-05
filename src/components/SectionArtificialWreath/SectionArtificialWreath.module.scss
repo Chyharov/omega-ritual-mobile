@@ -48,10 +48,12 @@
     @include mq(tab) {
         width: 320px;
         height: 500px;
+        margin-bottom: 20px;
     }
 
     @include mq(desk) {
         width: 630px;
         height: 820px;
+        
     }
 }
