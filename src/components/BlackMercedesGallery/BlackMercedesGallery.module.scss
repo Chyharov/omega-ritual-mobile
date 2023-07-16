@@ -123,6 +123,10 @@
     width: 100%;
     max-width: 1200px;
     position: relative;
+
+    @include mq(tab) {
+        margin: 10% auto;
+    }
 }
 
 .close {
