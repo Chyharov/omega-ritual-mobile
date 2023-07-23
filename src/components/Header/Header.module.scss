@@ -10,9 +10,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
   outline: 1px solid var(--primaryTextColor);
-  &--active {
-     composes: header;
-   }
+
   @include mq(tab) {
 
   }
