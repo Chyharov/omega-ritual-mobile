@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/omega-ritual-mobile/static/css/main.cfeed248.css",
+    "main.css": "/omega-ritual-mobile/static/css/main.2981847e.css",
     "main.js": "/omega-ritual-mobile/static/js/main.db14b49e.js",
     "static/css/387.2971c3d2.chunk.css": "/omega-ritual-mobile/static/css/387.2971c3d2.chunk.css",
     "static/js/387.e9d7c2d7.chunk.js": "/omega-ritual-mobile/static/js/387.e9d7c2d7.chunk.js",
@@ -222,7 +222,7 @@
     "static/media/DSC_3520-kopiya.jpg": "/omega-ritual-mobile/static/media/DSC_3520-kopiya.17b5ea8aed7be37a8e19.jpg",
     "static/media/DSC_3525.jpg": "/omega-ritual-mobile/static/media/DSC_3525.688ac358b1c7dd765350.jpg",
     "index.html": "/omega-ritual-mobile/index.html",
-    "main.cfeed248.css.map": "/omega-ritual-mobile/static/css/main.cfeed248.css.map",
+    "main.2981847e.css.map": "/omega-ritual-mobile/static/css/main.2981847e.css.map",
     "main.db14b49e.js.map": "/omega-ritual-mobile/static/js/main.db14b49e.js.map",
     "387.2971c3d2.chunk.css.map": "/omega-ritual-mobile/static/css/387.2971c3d2.chunk.css.map",
     "387.e9d7c2d7.chunk.js.map": "/omega-ritual-mobile/static/js/387.e9d7c2d7.chunk.js.map",
@@ -254,7 +254,7 @@
     "519.88893499.chunk.js.map": "/omega-ritual-mobile/static/js/519.88893499.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfeed248.css",
+    "static/css/main.2981847e.css",
     "static/js/main.db14b49e.js"
   ]
 }
